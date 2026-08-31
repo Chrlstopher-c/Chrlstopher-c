@@ -32,6 +32,14 @@
   </a>
 </p>
 
+<p align="center"><sub>
+  <b>Top repo per language</b> —
+  TypeScript <a href="https://github.com/Chrlstopher-c/ccremote">ccremote</a> ·
+  Python <a href="https://github.com/Chrlstopher-c/echohub-v2">echohub-v2</a> ·
+  Swift <a href="https://github.com/Chrlstopher-c/echo-centre">echo-centre</a> ·
+  Rust <a href="https://github.com/Chrlstopher-c/vitrail">vitrail</a>
+</sub></p>
+
 <p align="center">
   <a href="https://github.com/Chrlstopher-c">
     <picture>

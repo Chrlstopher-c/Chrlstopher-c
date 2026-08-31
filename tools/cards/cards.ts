@@ -62,8 +62,21 @@ for (const n of u.repositories.nodes) {
   }
 }
 const totalBytes = [...bytesByLang.values()].reduce((s, e) => s + e.size, 0) || 1
+
+// Repo le plus massif pour chaque langage.
+const langRepo = new Map<string, Map<string, number>>()
+for (const n of u.repositories.nodes) {
+  if (n.isPrivate || LANG_EXCLUDE_REPOS.has(n.name)) continue
+  for (const e of n.languages?.edges ?? []) {
+    const m = langRepo.get(e.node.name) ?? new Map<string, number>()
+    m.set(n.name, (m.get(n.name) ?? 0) + e.size)
+    langRepo.set(e.node.name, m)
+  }
+}
+const topRepo = (lang: string): string => [...(langRepo.get(lang)?.entries() ?? [])].sort((a, b) => b[1] - a[1])[0]?.[0] ?? ''
+
 const langs = [...bytesByLang.entries()]
-  .map(([name, e]) => ({ name, pct: (100 * e.size) / totalBytes, lines: Math.round(e.size / BYTES_PER_LINE), color: e.color || '#888' }))
+  .map(([name, e]) => ({ name, pct: (100 * e.size) / totalBytes, lines: Math.round(e.size / BYTES_PER_LINE), color: e.color || '#888', repo: topRepo(name) }))
   .sort((a, b) => b.pct - a.pct)
   .slice(0, 6)
 const langCount = bytesByLang.size
@@ -111,9 +124,10 @@ function langsCard(t: Theme): string {
     .map(
       (l, i) =>
         `<circle cx="32" cy="${86 + i * 18}" r="4.5" fill="${l.color}"/>
-         <text x="46" y="${90 + i * 18}" font-family="${MONO}" font-size="12.5" fill="${t.strong}">${l.name}</text>
-         <text x="352" y="${90 + i * 18}" text-anchor="end" font-family="${MONO}" font-size="12.5" fill="${t.text}">${l.pct.toFixed(1)}%</text>
-         <text x="414" y="${90 + i * 18}" text-anchor="end" font-family="${MONO}" font-size="12" fill="${t.muted}">~${fmtK(l.lines)}</text>`
+         <text x="46" y="${90 + i * 18}" font-family="${MONO}" font-size="12" fill="${t.strong}">${l.name}</text>
+         <text x="214" y="${90 + i * 18}" text-anchor="end" font-family="${MONO}" font-size="11.5" fill="${t.text}">${l.pct.toFixed(1)}%</text>
+         <text x="296" y="${90 + i * 18}" text-anchor="end" font-family="${MONO}" font-size="11" fill="${t.muted}">~${fmtK(l.lines)}</text>
+         <text x="414" y="${90 + i * 18}" text-anchor="end" font-family="${MONO}" font-size="11" fill="${l.color}">${l.repo}</text>`
     )
     .join('')
   return shell(
@@ -122,7 +136,10 @@ function langsCard(t: Theme): string {
     198,
     `<text x="26" y="40" font-family="${MONO}" font-size="12" letter-spacing="1.5" fill="${t.muted}">LANGUAGES · BY CODE VOLUME</text>
      ${bar}${list}
-     <text x="414" y="72" text-anchor="end" font-family="${MONO}" font-size="9.5" fill="${t.dim}">%          ~lines</text>`
+     <text x="46" y="72" font-family="${MONO}" font-size="9.5" fill="${t.dim}">language</text>
+     <text x="214" y="72" text-anchor="end" font-family="${MONO}" font-size="9.5" fill="${t.dim}">%</text>
+     <text x="296" y="72" text-anchor="end" font-family="${MONO}" font-size="9.5" fill="${t.dim}">~lines</text>
+     <text x="414" y="72" text-anchor="end" font-family="${MONO}" font-size="9.5" fill="${t.dim}">top repo</text>`
   )
 }
 
