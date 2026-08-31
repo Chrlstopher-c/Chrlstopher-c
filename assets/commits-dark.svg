@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="316" viewBox="0 0 860 316" role="img">
+  <defs><linearGradient id="cm-dark" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#161b22"/><stop offset="1" stop-color="#11151b"/></linearGradient></defs>
+  <rect x="0.5" y="0.5" width="859" height="315" rx="12" fill="url(#cm-dark)" stroke="#2a313c"/>
+  <rect x="0.5" y="0.5" width="859" height="2.5" rx="1" fill="#d8a35f"/>
+  <text x="30" y="40" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" letter-spacing="1.5" fill="#8b929c">COMMITS BY PROJECT · TOP PUBLIC REPOS</text>
+  <text x="30" y="65" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13" fill="#e9edf1">echohub</text>
+        <rect x="180" y="51" width="590" height="13" rx="6" fill="#1c222b"/>
+        <rect x="180" y="51" width="590" height="13" rx="6" fill="#3178c6"/>
+        <text x="782" y="64" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">526</text><text x="30" y="95" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13" fill="#e9edf1">ccremote</text>
+        <rect x="180" y="81" width="590" height="13" rx="6" fill="#1c222b"/>
+        <rect x="180" y="81" width="391.4638783269962" height="13" rx="6" fill="#3178c6"/>
+        <text x="782" y="94" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">349</text><text x="30" y="125" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13" fill="#e9edf1">vela</text>
+        <rect x="180" y="111" width="590" height="13" rx="6" fill="#1c222b"/>
+        <rect x="180" y="111" width="183.95437262357413" height="13" rx="6" fill="#3178c6"/>
+        <text x="782" y="124" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">164</text><text x="30" y="155" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13" fill="#e9edf1">echohub-v2</text>
+        <rect x="180" y="141" width="590" height="13" rx="6" fill="#1c222b"/>
+        <rect x="180" y="141" width="114.4106463878327" height="13" rx="6" fill="#3572A5"/>
+        <text x="782" y="154" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">102</text><text x="30" y="185" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13" fill="#e9edf1">Primordia</text>
+        <rect x="180" y="171" width="590" height="13" rx="6" fill="#1c222b"/>
+        <rect x="180" y="171" width="108.8022813688213" height="13" rx="6" fill="#355570"/>
+        <text x="782" y="184" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">97</text><text x="30" y="215" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13" fill="#e9edf1">claude-arcade</text>
+        <rect x="180" y="201" width="590" height="13" rx="6" fill="#1c222b"/>
+        <rect x="180" y="201" width="69.54372623574145" height="13" rx="6" fill="#3178c6"/>
+        <text x="782" y="214" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">62</text><text x="30" y="245" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13" fill="#e9edf1">vigie</text>
+        <rect x="180" y="231" width="590" height="13" rx="6" fill="#1c222b"/>
+        <rect x="180" y="231" width="32.52851711026616" height="13" rx="6" fill="#F05138"/>
+        <text x="782" y="244" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">29</text><text x="30" y="275" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13" fill="#e9edf1">echo-os</text>
+        <rect x="180" y="261" width="590" height="13" rx="6" fill="#1c222b"/>
+        <rect x="180" y="261" width="30.285171102661597" height="13" rx="6" fill="#44a51c"/>
+        <text x="782" y="274" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">27</text>
+</svg>

@@ -43,8 +43,8 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg"/>
-    <img src="./assets/activity-light.svg" alt="Activity overview" width="95%"/>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/commits-dark.svg"/>
+    <img src="./assets/commits-light.svg" alt="Commits by project" width="95%"/>
   </picture>
 </p>
 

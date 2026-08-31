@@ -27,7 +27,11 @@ const query = `
     }
     repositories(first: 100, ownerAffiliations: OWNER, isFork: false, orderBy: {field: STARGAZERS, direction: DESC}) {
       totalCount
-      nodes { name stargazerCount forkCount isPrivate primaryLanguage { name color } }
+      nodes {
+        name stargazerCount forkCount isPrivate
+        primaryLanguage { name color }
+        defaultBranchRef { target { ... on Commit { history { totalCount } } } }
+      }
     }
   }
 }`
