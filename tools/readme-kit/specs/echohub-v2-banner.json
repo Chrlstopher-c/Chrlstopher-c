@@ -1,0 +1,1 @@
+{"name":"EchoHub v2","eyebrow":"Local LLM manager","tagline":"Find, download and run GGUF models on your own GPU, with a load planner that measures the machine instead of guessing.","tags":["Python","FastAPI","React","llama.cpp","vLLM","Docker"],"repo":"echohub-v2","mark":"layers"}

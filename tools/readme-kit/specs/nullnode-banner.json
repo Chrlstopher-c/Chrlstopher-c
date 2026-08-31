@@ -1,0 +1,1 @@
+{"name":"nullnode","eyebrow":"Encrypted P2P messaging","tagline":"Your public key is your account. Messages travel peer to peer over WebRTC, and the relay only ever sees ciphertext.","tags":["TypeScript","WebRTC","libsodium","Tauri v2","Bun"],"repo":"nullnode","mark":"mesh"}

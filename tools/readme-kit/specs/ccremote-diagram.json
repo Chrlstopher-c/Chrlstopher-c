@@ -1,0 +1,10 @@
+{"w":1040,"h":470,
+"groups":[{"x":20,"y":20,"w":200,"h":130,"label":"phone / browser"},{"x":260,"y":20,"w":420,"h":430,"label":"Raspberry Pi · behind Cloudflare Tunnel"},{"x":720,"y":20,"w":300,"h":250,"label":"main PC · LAN"},{"x":720,"y":300,"w":300,"h":150,"label":"VPS · fallback"}],
+"nodes":[{"id":"browser","x":40,"y":60,"w":160,"h":64,"title":"Browser / Vigie","sub":"HTTPS"},
+{"id":"piweb","x":290,"y":60,"w":180,"h":64,"title":"pi-web","sub":"FastAPI · :8766","accent":true},
+{"id":"cp","x":290,"y":190,"w":360,"h":64,"title":"Control plane (Bun)","sub":"registry · orchestrator · API :8722","accent":true},
+{"id":"link","x":290,"y":330,"w":180,"h":64,"title":"Link","sub":"ws :8721"},
+{"id":"serverpy","x":750,"y":60,"w":240,"h":64,"title":"server.py","sub":"tmux · metrics · WoL · :8765"},
+{"id":"suppc","x":750,"y":170,"w":240,"h":64,"title":"Supervisor","sub":"spawns Claude Code workers"},
+{"id":"supvps","x":750,"y":340,"w":240,"h":64,"title":"Supervisor (fallback)","sub":"same role when the PC is off"}],
+"edges":[{"from":"browser","to":"piweb"},{"from":"piweb","to":"serverpy","label":"ws 8765"},{"from":"piweb","to":"cp","label":"loopback"},{"from":"cp","to":"link"},{"from":"suppc","to":"link","label":"connects first"},{"from":"supvps","to":"link","dashed":true}]}

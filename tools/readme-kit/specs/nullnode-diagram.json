@@ -1,0 +1,68 @@
+{
+ "w": 1000,
+ "h": 420,
+ "nodes": [
+  {
+   "id": "relay",
+   "x": 370,
+   "y": 40,
+   "w": 260,
+   "h": 70,
+   "title": "Blind relay",
+   "sub": "Bun \u00b7 ws :8791 \u00b7 sees only ciphertext",
+   "accent": true
+  },
+  {
+   "id": "a",
+   "x": 60,
+   "y": 200,
+   "w": 220,
+   "h": 70,
+   "title": "Peer A",
+   "sub": "keys never leave the device"
+  },
+  {
+   "id": "b",
+   "x": 720,
+   "y": 200,
+   "w": 220,
+   "h": 70,
+   "title": "Peer B",
+   "sub": "keys never leave the device"
+  },
+  {
+   "id": "daemon",
+   "x": 720,
+   "y": 320,
+   "w": 220,
+   "h": 64,
+   "title": "Tauri daemon",
+   "sub": "holds presence, GUI closed"
+  }
+ ],
+ "edges": [
+  {
+   "from": "a",
+   "to": "relay",
+   "both": true,
+   "label": "sealed offer / answer"
+  },
+  {
+   "from": "relay",
+   "to": "b",
+   "both": true
+  },
+  {
+   "from": "a",
+   "to": "b",
+   "both": true,
+   "label": "WebRTC DataChannel \u00b7 ChaCha20-Poly1305"
+  },
+  {
+   "from": "daemon",
+   "to": "b",
+   "dashed": true,
+   "label": "hand-off"
+  }
+ ]
+}

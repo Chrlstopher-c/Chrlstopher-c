@@ -1,0 +1,6 @@
+{"w":1040,"h":200,
+"nodes":[{"id":"arch","x":30,"y":60,"w":220,"h":70,"title":"Arch Linux","sub":"swiftly · Swift 6 toolchain"},
+{"id":"xtool","x":300,"y":60,"w":200,"h":70,"title":"xtool","sub":"Darwin SDK · dev build --ipa","accent":true},
+{"id":"ipa","x":550,"y":60,"w":180,"h":70,"title":"Vigie.ipa","sub":"unsigned"},
+{"id":"imp","x":780,"y":60,"w":230,"h":70,"title":"Impactor → iPhone","sub":"sign · 7-day validity"}],
+"edges":[{"from":"arch","to":"xtool"},{"from":"xtool","to":"ipa"},{"from":"ipa","to":"imp"}]}

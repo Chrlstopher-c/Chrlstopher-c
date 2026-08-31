@@ -1,0 +1,8 @@
+{
+  "name": "Aegis",
+  "eyebrow": "Linux desktop security · Rust",
+  "tagline": "Real-time antivirus for your Linux workstation. YARA signatures plus kernel-level behaviour detection, no cloud, no open ports.",
+  "tags": ["Rust", "fanotify", "YARA-X", "Tauri v2", "MIT"],
+  "repo": "aegis",
+  "mark": "shield"
+}

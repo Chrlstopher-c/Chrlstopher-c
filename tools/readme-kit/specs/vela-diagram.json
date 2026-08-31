@@ -1,0 +1,11 @@
+{"w":1040,"h":460,
+"groups":[{"x":20,"y":20,"w":300,"h":420,"label":"window · WebKitGTK"},{"x":360,"y":20,"w":320,"h":420,"label":"Rust backend · Tauri v2"},{"x":720,"y":20,"w":300,"h":420,"label":"local tools · all optional"}],
+"nodes":[{"id":"ui","x":50,"y":60,"w":240,"h":64,"title":"React UI","sub":"profiles · panels · palette","accent":true},
+{"id":"term","x":50,"y":300,"w":240,"h":64,"title":"Terminal (PTY)","sub":"claude shim on PATH"},
+{"id":"cmds","x":390,"y":60,"w":260,"h":64,"title":"Tauri commands","sub":"150+ · fs, archives, index","accent":true},
+{"id":"native","x":390,"y":180,"w":260,"h":64,"title":"Native libraries","sub":"libgit2 · GStreamer · image"},
+{"id":"control","x":390,"y":300,"w":260,"h":64,"title":"control.rs","sub":"Unix socket · MCP server"},
+{"id":"ff","x":750,"y":60,"w":240,"h":64,"title":"ffmpeg · yt-dlp","sub":"media, downloads"},
+{"id":"demucs","x":750,"y":180,"w":240,"h":64,"title":"demucs (venv)","sub":"stem separation, GPU"},
+{"id":"pandoc","x":750,"y":300,"w":240,"h":64,"title":"pandoc · tesseract","sub":"conversion, OCR"}],
+"edges":[{"from":"ui","to":"cmds","both":true,"label":"invoke"},{"from":"cmds","to":"native"},{"from":"cmds","to":"ff"},{"from":"cmds","to":"demucs"},{"from":"cmds","to":"pandoc"},{"from":"term","to":"control","label":"MCP bridge (bun)"},{"from":"control","to":"ui","dashed":true,"label":"events"}]}

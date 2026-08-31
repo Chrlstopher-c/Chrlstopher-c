@@ -1,0 +1,12 @@
+{"w":1040,"h":470,
+"groups":[{"x":240,"y":20,"w":780,"h":430,"label":"Docker stack · GPU host · nothing exposed but :37920"}],
+"nodes":[{"id":"browser","x":30,"y":60,"w":170,"h":64,"title":"Browser / phone"},
+{"id":"nginx","x":270,"y":60,"w":170,"h":64,"title":"nginx","sub":":37920 · basic auth"},
+{"id":"api","x":480,"y":60,"w":200,"h":64,"title":"API · FastAPI","sub":":37921 loopback","accent":true},
+{"id":"db","x":270,"y":180,"w":170,"h":64,"title":"SQLite","sub":"conversations · registry"},
+{"id":"planner","x":480,"y":180,"w":200,"h":64,"title":"Load planner","sub":"reads GGUF · measures VRAM","accent":true},
+{"id":"engine","x":480,"y":300,"w":200,"h":64,"title":"Engine","sub":"llama-server · vLLM"},
+{"id":"gpu","x":750,"y":300,"w":220,"h":64,"title":"GPU","sub":"NVML · CUDA 12.8"},
+{"id":"searx","x":750,"y":60,"w":220,"h":64,"title":"SearXNG","sub":"internal network only"},
+{"id":"atelier","x":750,"y":180,"w":220,"h":64,"title":"Atelier container","sub":"code exec · token · limits"}],
+"edges":[{"from":"browser","to":"nginx"},{"from":"nginx","to":"api"},{"from":"api","to":"db"},{"from":"api","to":"planner","label":"plan"},{"from":"planner","to":"engine"},{"from":"engine","to":"gpu"},{"from":"api","to":"searx","label":"web search"},{"from":"api","to":"atelier","label":"tools"}]}
