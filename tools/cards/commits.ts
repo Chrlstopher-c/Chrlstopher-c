@@ -31,9 +31,13 @@ interface RepoNode {
   defaultBranchRef: { target: { history: { totalCount: number } } | null } | null
 }
 
+// Projets non "vitrine" à exclure de la card (jeux, expérimentations, tests).
+const BLOCKLIST = new Set(['Primordia'])
+const isExcluded = (name: string): boolean => BLOCKLIST.has(name) || /(-|^)(test|demo|game|hello)s?($|-)/i.test(name)
+
 const raw = JSON.parse(readFileSync(new URL('./out/raw.json', import.meta.url), 'utf8')) as Raw
 const repos = raw.data.user.repositories.nodes
-  .filter((r) => !r.isPrivate && r.defaultBranchRef?.target?.history)
+  .filter((r) => !r.isPrivate && !isExcluded(r.name) && r.defaultBranchRef?.target?.history)
   .map((r) => ({ name: r.name, commits: r.defaultBranchRef!.target!.history.totalCount, color: r.primaryLanguage?.color || '#888' }))
   .sort((a, b) => b.commits - a.commits)
   .slice(0, 8)

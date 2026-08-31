@@ -16,17 +16,17 @@
         <text x="782" y="124" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">164</text><text x="30" y="155" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13" fill="#e9edf1">echohub-v2</text>
         <rect x="180" y="141" width="590" height="13" rx="6" fill="#1c222b"/>
         <rect x="180" y="141" width="114.4106463878327" height="13" rx="6" fill="#3572A5"/>
-        <text x="782" y="154" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">102</text><text x="30" y="185" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13" fill="#e9edf1">Primordia</text>
+        <text x="782" y="154" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">102</text><text x="30" y="185" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13" fill="#e9edf1">claude-arcade</text>
         <rect x="180" y="171" width="590" height="13" rx="6" fill="#1c222b"/>
-        <rect x="180" y="171" width="108.8022813688213" height="13" rx="6" fill="#355570"/>
-        <text x="782" y="184" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">97</text><text x="30" y="215" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13" fill="#e9edf1">claude-arcade</text>
+        <rect x="180" y="171" width="69.54372623574145" height="13" rx="6" fill="#3178c6"/>
+        <text x="782" y="184" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">62</text><text x="30" y="215" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13" fill="#e9edf1">vigie</text>
         <rect x="180" y="201" width="590" height="13" rx="6" fill="#1c222b"/>
-        <rect x="180" y="201" width="69.54372623574145" height="13" rx="6" fill="#3178c6"/>
-        <text x="782" y="214" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">62</text><text x="30" y="245" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13" fill="#e9edf1">vigie</text>
+        <rect x="180" y="201" width="32.52851711026616" height="13" rx="6" fill="#F05138"/>
+        <text x="782" y="214" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">29</text><text x="30" y="245" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13" fill="#e9edf1">echo-os</text>
         <rect x="180" y="231" width="590" height="13" rx="6" fill="#1c222b"/>
-        <rect x="180" y="231" width="32.52851711026616" height="13" rx="6" fill="#F05138"/>
-        <text x="782" y="244" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">29</text><text x="30" y="275" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13" fill="#e9edf1">echo-os</text>
+        <rect x="180" y="231" width="30.285171102661597" height="13" rx="6" fill="#44a51c"/>
+        <text x="782" y="244" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">27</text><text x="30" y="275" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13" fill="#e9edf1">nullnode</text>
         <rect x="180" y="261" width="590" height="13" rx="6" fill="#1c222b"/>
-        <rect x="180" y="261" width="30.285171102661597" height="13" rx="6" fill="#44a51c"/>
-        <text x="782" y="274" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">27</text>
+        <rect x="180" y="261" width="23.55513307984791" height="13" rx="6" fill="#3178c6"/>
+        <text x="782" y="274" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">21</text>
 </svg>
