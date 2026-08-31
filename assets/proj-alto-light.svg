@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="460" height="144" viewBox="0 0 460 144" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="158" viewBox="0 0 460 158" role="img">
   <defs><linearGradient id="g-alto-light" x1="0" y1="0" x2="0" y2="1">
     <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f6f8fa"/></linearGradient></defs>
-  <rect x="0.5" y="0.5" width="459" height="143" rx="12" fill="url(#g-alto-light)" stroke="#d0d7de"/>
+  <rect x="0.5" y="0.5" width="459" height="157" rx="12" fill="url(#g-alto-light)" stroke="#d0d7de"/>
   <text x="24" y="38" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="15" font-weight="700" fill="#9a6b1f">alto</text>
-  <text x="24" y="66" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#3b4149">Hands-free voice ↔ Claude Code: real-time</text><text x="24" y="85" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#3b4149">STT/TTS, full-duplex echo guard, 6s→2s latency.</text><rect x="24" y="114" width="56" height="22" rx="11" fill="#f6f8fa" stroke="#d0d7de"/>
-        <text x="52" y="129" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#59636e">Tauri</text><rect x="88" y="114" width="84.8" height="22" rx="11" fill="#f6f8fa" stroke="#d0d7de"/>
-        <text x="130.4" y="129" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#59636e">Agent SDK</text>
+  <text x="24" y="66" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#3b4149">Hands-free voice ↔ Claude Code: real-time</text><text x="24" y="85" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#3b4149">STT/TTS, full-duplex echo guard, 6s→2s latency.</text><rect x="24" y="124" width="56" height="22" rx="11" fill="#f6f8fa" stroke="#d0d7de"/>
+        <text x="52" y="139" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#59636e">Tauri</text><rect x="88" y="124" width="84.8" height="22" rx="11" fill="#f6f8fa" stroke="#d0d7de"/>
+        <text x="130.4" y="139" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#59636e">Agent SDK</text>
 </svg>

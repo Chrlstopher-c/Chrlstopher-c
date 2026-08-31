@@ -62,9 +62,8 @@ const tagW = (s: string): number => s.length * 7.2 + 20
 function card(p: Proj, t: Theme): string {
   const descLines = wrap(p.desc, 48)
   const descTop = 66
-  const descH = descLines.length * 19
-  const tagsY = descTop + descH + 10
-  const H = tagsY + 30
+  const H = 158 // hauteur uniforme pour aligner les cards côte à côte
+  const tagsY = H - 34 // tags ancrés en bas
   const id = `g-${p.slug}-${t.key}`
 
   let tx = 24
