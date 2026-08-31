@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="175" viewBox="0 0 440 175" role="img">
+  <defs><linearGradient id="cardbg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#161b22"/><stop offset="1" stop-color="#11151b"/></linearGradient></defs>
+  <rect x="0.5" y="0.5" width="439" height="174" rx="12" fill="url(#cardbg)" stroke="#2a313c"/>
+  <rect x="0.5" y="0.5" width="439" height="2.5" rx="1" fill="#d8a35f"/>
+  <text x="26" y="40" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" letter-spacing="1.5" fill="#8b929c">ACTIVITY · LAST 12 MONTHS</text>
+   <text x="26" y="104" font-family="Georgia,'Times New Roman',serif" font-size="62" font-weight="600" fill="#d8a35f">1,862</text>
+   <text x="225" y="104" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="15" fill="#e9edf1">commits</text>
+   <text x="26" y="140" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13.5" fill="#c1c9d2">1,894 contributions</text>
+   <line x1="26" y1="150" x2="414" y2="150" stroke="#2a313c"/>
+   <text x="26" y="166" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">74 repos · 32 public · 9 languages</text>
+</svg>
