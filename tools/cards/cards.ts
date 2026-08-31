@@ -28,7 +28,14 @@ interface Raw {
   data: {
     user: {
       contributionsCollection: { totalCommitContributions: number; contributionCalendar: { totalContributions: number } }
-      repositories: { totalCount: number; nodes: { isPrivate: boolean; primaryLanguage: { name: string; color: string } | null }[] }
+      repositories: {
+        totalCount: number
+        nodes: {
+          isPrivate: boolean
+          primaryLanguage: { name: string; color: string } | null
+          languages: { edges: { size: number; node: { name: string; color: string } }[] }
+        }[]
+      }
     }
   }
 }
@@ -40,21 +47,25 @@ const totalContrib = u.contributionsCollection.contributionCalendar.totalContrib
 const repos = u.repositories.totalCount
 const publicRepos = u.repositories.nodes.filter((n) => !n.isPrivate).length
 
-const counter = new Map<string, { n: number; color: string }>()
+// Langages par VOLUME de code réel (bytes), agrégés sur les repos publics.
+const BYTES_PER_LINE = 42 // estimation moyenne pour convertir bytes → lignes
+const bytesByLang = new Map<string, { size: number; color: string }>()
 for (const n of u.repositories.nodes) {
-  const pl = n.primaryLanguage
-  if (!pl) continue
-  const e = counter.get(pl.name) ?? { n: 0, color: pl.color }
-  e.n++
-  counter.set(pl.name, e)
+  if (n.isPrivate) continue
+  for (const e of n.languages?.edges ?? []) {
+    const cur = bytesByLang.get(e.node.name) ?? { size: 0, color: e.node.color }
+    cur.size += e.size
+    bytesByLang.set(e.node.name, cur)
+  }
 }
-const langTotal = [...counter.values()].reduce((s, e) => s + e.n, 0)
-const langs = [...counter.entries()]
-  .map(([name, e]) => ({ name, pct: (100 * e.n) / langTotal, color: e.color || '#888' }))
+const totalBytes = [...bytesByLang.values()].reduce((s, e) => s + e.size, 0) || 1
+const langs = [...bytesByLang.entries()]
+  .map(([name, e]) => ({ name, pct: (100 * e.size) / totalBytes, lines: Math.round(e.size / BYTES_PER_LINE), color: e.color || '#888' }))
   .sort((a, b) => b.pct - a.pct)
-  .slice(0, 5)
-const langCount = counter.size
+  .slice(0, 6)
+const langCount = bytesByLang.size
 const nf = (n: number): string => n.toLocaleString('en')
+const fmtK = (n: number): string => (n >= 1000 ? `${(n / 1000).toFixed(n >= 10000 ? 0 : 1)}k` : `${n}`)
 
 function shell(t: Theme, w: number, h: number, inner: string): string {
   const id = `bg-${t.key}`
@@ -72,7 +83,7 @@ function statsCard(t: Theme): string {
   return shell(
     t,
     440,
-    175,
+    198,
     `<text x="26" y="40" font-family="${MONO}" font-size="12" letter-spacing="1.5" fill="${t.muted}">ACTIVITY · LAST 12 MONTHS</text>
      <text x="26" y="104" font-family="${SERIF}" font-size="62" font-weight="600" fill="${t.accent}">${big}</text>
      <text x="${26 + big.length * 37 + 14}" y="104" font-family="${MONO}" font-size="15" fill="${t.text}">commits</text>
@@ -96,17 +107,19 @@ function langsCard(t: Theme): string {
   const list = langs
     .map(
       (l, i) =>
-        `<circle cx="32" cy="${86 + i * 17}" r="4.5" fill="${l.color}"/>
-         <text x="46" y="${90 + i * 17}" font-family="${MONO}" font-size="12.5" fill="${t.strong}">${l.name}</text>
-         <text x="414" y="${90 + i * 17}" text-anchor="end" font-family="${MONO}" font-size="12.5" fill="${t.muted}">${l.pct.toFixed(1)}%</text>`
+        `<circle cx="32" cy="${86 + i * 18}" r="4.5" fill="${l.color}"/>
+         <text x="46" y="${90 + i * 18}" font-family="${MONO}" font-size="12.5" fill="${t.strong}">${l.name}</text>
+         <text x="352" y="${90 + i * 18}" text-anchor="end" font-family="${MONO}" font-size="12.5" fill="${t.text}">${l.pct.toFixed(1)}%</text>
+         <text x="414" y="${90 + i * 18}" text-anchor="end" font-family="${MONO}" font-size="12" fill="${t.muted}">~${fmtK(l.lines)}</text>`
     )
     .join('')
   return shell(
     t,
     440,
-    175,
-    `<text x="26" y="40" font-family="${MONO}" font-size="12" letter-spacing="1.5" fill="${t.muted}">MOST USED LANGUAGES</text>
-     ${bar}${list}`
+    198,
+    `<text x="26" y="40" font-family="${MONO}" font-size="12" letter-spacing="1.5" fill="${t.muted}">LANGUAGES · BY CODE VOLUME</text>
+     ${bar}${list}
+     <text x="414" y="72" text-anchor="end" font-family="${MONO}" font-size="9.5" fill="${t.dim}">%          ~lines</text>`
   )
 }
 

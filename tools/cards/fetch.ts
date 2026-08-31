@@ -34,6 +34,7 @@ const query = `
       nodes {
         name stargazerCount forkCount isPrivate
         primaryLanguage { name color }
+        languages(first: 12, orderBy: {field: SIZE, direction: DESC}) { edges { size node { name color } } }
         defaultBranchRef { target { ... on Commit { history(since: "${since}") { totalCount } } } }
       }
     }
