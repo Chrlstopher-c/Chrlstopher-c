@@ -1,0 +1,5 @@
+{"title":"Measured, on my workstation","tiles":[
+{"value":"86","unit":"µs","label":"from the first write on a canary to SIGKILL","sub":"tests/redteam/lot3-ransomware-kill.sh, 2 000 victim files"},
+{"value":"17 / 2 000","label":"files encrypted before the process died (0.85 %)","sub":"same run"},
+{"value":"~1","unit":"ms","label":"EICAR executed, detected and quarantined","sub":"tests/redteam/lot2-eicar-quarantine.sh"},
+{"value":"50","unit":"MiB","label":"daemon RSS after 10 h of uptime, about 1.2 % of one core","sub":"ps and systemctl show, 2026-08-31"}]}

@@ -1,0 +1,5 @@
+{"title":"Install","steps":[
+{"title":"Build","cmd":"cargo build --release","note":"Rust stable and Bun. Never as root."},
+{"title":"Install the daemon","cmd":"sudo ./packaging/install.sh","note":"Binary, YARA rules, systemd unit, /var/lib/aegis."},
+{"title":"Start it","cmd":"sudo systemctl enable --now aegis","note":"Follow it with journalctl -u aegis -f."},
+{"title":"Install the dashboard","cmd":"cd ui && bun run bundle && ../packaging/install-ui.sh","note":"AppImage in ~/.local/bin, launcher and autostart entry."}]}

@@ -1,0 +1,5 @@
+{"title":"What it stands on","tiles":[
+{"value":"yara-x","unit":"0.11","label":"signature engine, pure Rust","sub":"embeds wasmtime, so the unit allows W+X memory"},
+{"value":"nix","unit":"0.29","label":"fanotify, signals, processes","sub":"the kernel side of the probes"},
+{"value":"tokio","unit":"1","label":"async runtime of the daemon","sub":"322 crates in Cargo.lock in total"},
+{"value":"Tauri 2","label":"dashboard shell around React 19","sub":"AppImage of 95 MB, 139 MB of node_modules for dev"}]}

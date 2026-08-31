@@ -1,0 +1,5 @@
+{"title":"What happens when something runs","steps":[
+{"title":"A program starts","note":"fanotify pauses the exec on /, /tmp and /dev/shm and hands the file to Aegis."},
+{"title":"Both engines look","note":"YARA-X scans the bytes; the heuristics read the context (writable dir, reverse shell, canary)."},
+{"title":"The policy decides","note":"Detection mode: medium severity waits for you, high is quarantined. Prevention mode: blocked."},
+{"title":"You act in the dashboard","note":"Restore, delete or exclude the path. The tray icon turns red until you look."}]}

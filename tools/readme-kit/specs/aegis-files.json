@@ -1,0 +1,17 @@
+{"groups":[
+{"label":"Daemon · system-wide","entries":[
+{"path":"/usr/local/bin/aegis-daemon","role":"the daemon, a 22 MB static release binary","kind":"file"},
+{"path":"/etc/systemd/system/aegis.service","role":"unit: four capabilities, RUST_LOG, rules directory","kind":"file"},
+{"path":"/usr/share/aegis/rules/","role":"YARA rules (AEGIS_RULES_DIR)","kind":"dir"},
+{"path":"/var/lib/aegis/","role":"state and the quarantine store, with metadata per file","kind":"dir"},
+{"path":"/run/aegis/aegis.sock","role":"IPC socket as root; $XDG_RUNTIME_DIR/aegis.sock otherwise","kind":"socket"},
+{"path":"127.0.0.1:8787","role":"WebSocket bridge for the dashboard (AEGIS_WS_ADDR)","kind":"port"}]},
+{"label":"Logs","entries":[
+{"path":"journalctl -u aegis","role":"everything the daemon says, RUST_LOG=info by default","kind":"log"},
+{"path":"logs/","role":"development runs through scripts/start.sh, reset at each start","kind":"log"}]},
+{"label":"Dashboard · per user","entries":[
+{"path":"~/.local/bin/Aegis.AppImage","role":"the UI","kind":"file"},
+{"path":"~/.local/share/applications/agency.echo.aegis.desktop","role":"launcher; a copy in ~/.config/autostart starts it at login","kind":"file"}]},
+{"label":"Tuning · environment of the unit","entries":[
+{"path":"AEGIS_CANARY_DIRS","role":"directories where canary files are planted","kind":"file"},
+{"path":"AEGIS_SENSITIVE_FILES","role":"files watched for reads, /etc/shadow and /etc/gshadow by default","kind":"file"}]}]}

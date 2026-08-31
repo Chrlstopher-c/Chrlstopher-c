@@ -1,0 +1,5 @@
+{"title":"Uninstall","steps":[
+{"title":"Stop and disable","cmd":"sudo systemctl disable --now aegis","note":"No script yet; three commands do it."},
+{"title":"Remove the daemon","cmd":"sudo rm /usr/local/bin/aegis-daemon","note":"Also /etc/systemd/system/aegis.service and /usr/share/aegis, then systemctl daemon-reload."},
+{"title":"Decide about the data","cmd":"sudo rm -r /var/lib/aegis","note":"Quarantined files live here. Restore what you want to keep before deleting."},
+{"title":"Remove the dashboard","cmd":"rm ~/.local/bin/Aegis.AppImage","note":"And the agency.echo.aegis .desktop entries in ~/.local/share/applications and ~/.config/autostart."}]}
