@@ -22,13 +22,14 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_USER: ${{ github.repository_owner }}
 
-      - name: Generate cards
+      - name: Generate cards (dark + light)
         working-directory: tools/cards
         run: bun run cards.ts
 
       - name: Update assets
         run: |
-          cp tools/cards/out/stats.svg tools/cards/out/langs.svg tools/cards/out/contrib.svg assets/
+          cp tools/cards/out/stats-dark.svg tools/cards/out/stats-light.svg \
+             tools/cards/out/langs-dark.svg tools/cards/out/langs-light.svg assets/
           if git diff --quiet -- assets/*.svg; then
             echo "no change"; exit 0
           fi

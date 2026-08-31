@@ -1,7 +1,10 @@
-<!-- Christopher Couspeyre — profile README. Cards auto-générées (github-cards), rafraîchies chaque heure. -->
+<!-- Christopher Couspeyre — profile README. Cards auto-générées (github-cards), dark + light. -->
 
 <p align="center">
-  <img src="./assets/banner.svg" alt="Christopher Couspeyre — full-stack & systems developer, local-first" width="100%"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/banner-dark.svg"/>
+    <img src="./assets/banner-light.svg" alt="Christopher Couspeyre — full-stack & systems developer, local-first" width="100%"/>
+  </picture>
 </p>
 
 <h3 align="center">Full-stack &amp; systems developer — I build local-first alternatives to costly proprietary software.</h3>
@@ -14,17 +17,28 @@
 <br/>
 
 <p align="center">
-  <a href="https://github.com/Chrlstopher-c?tab=repositories"><img src="./assets/stats.svg" alt="GitHub activity" width="47%"/></a>
+  <a href="https://github.com/Chrlstopher-c?tab=repositories">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/stats-dark.svg"/>
+      <img src="./assets/stats-light.svg" alt="GitHub activity" width="47%"/>
+    </picture>
+  </a>
   &nbsp;
-  <a href="https://github.com/Chrlstopher-c?tab=repositories"><img src="./assets/langs.svg" alt="Most used languages" width="47%"/></a>
+  <a href="https://github.com/Chrlstopher-c?tab=repositories">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="./assets/langs-dark.svg"/>
+      <img src="./assets/langs-light.svg" alt="Most used languages" width="47%"/>
+    </picture>
+  </a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Chrlstopher-c"><img src="./assets/contrib.svg" alt="Contribution graph" width="95%"/></a>
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Chrlstopher-c/Chrlstopher-c/output/github-snake-dark.svg" alt="Contribution snake" width="95%"/>
+  <a href="https://github.com/Chrlstopher-c">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Chrlstopher-c/Chrlstopher-c/output/github-snake-dark.svg"/>
+      <img src="https://raw.githubusercontent.com/Chrlstopher-c/Chrlstopher-c/output/github-snake.svg" alt="Contribution graph" width="95%"/>
+    </picture>
+  </a>
 </p>
 
 <br/>
@@ -63,5 +77,3 @@
 <p align="center">
   <b><a href="https://christophercouspeyre.com">christophercouspeyre.com</a></b>  ·  Open to <b>remote</b> engineering roles  ·  📫 couspeyrechristopher.pro@gmail.com
 </p>
-
-<!-- profile README -->

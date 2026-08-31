@@ -14,12 +14,13 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate contribution snake (amber palette)
+      - name: Generate contribution snake (dark + light, amber)
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-snake-dark.svg?color_snake=%23d8a35f&color_dots=%231c222b,%235c472b,%23a9793f,%23d8a35f,%23e0b579
+            dist/github-snake.svg?color_snake=%239a6b1f&color_dots=%23ebedf0,%23f0d9a8,%23d9ab5f,%23b8842f,%239a6b1f
 
       - name: Push to output branch
         uses: crazy-max/ghaction-github-pages@v4

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" fill="none" role="img" aria-label="Christopher Couspeyre — full-stack & systems developer, local-first">
+  <defs>
+    <linearGradient id="groundL" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f6f8fa"/>
+    </linearGradient>
+    <radialGradient id="haloL" cx="0.28" cy="0.4" r="0.7">
+      <stop offset="0" stop-color="#9a6b1f" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#9a6b1f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="320" rx="16" fill="url(#groundL)"/>
+  <rect width="1200" height="320" rx="16" fill="url(#haloL)">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="6s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="1" y="1" width="1198" height="318" rx="15" fill="none" stroke="#d0d7de" stroke-width="1.5"/>
+
+  <g transform="translate(72,74)">
+    <rect x="0" y="-11" width="26" height="2" rx="1" fill="#9a6b1f"/>
+    <text x="40" y="-5" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13" letter-spacing="3" fill="#59636e">SOVEREIGN&#160;SOFTWARE&#160;·&#160;LOCAL-FIRST</text>
+  </g>
+
+  <text x="70" y="168" font-family="Georgia,'Times New Roman',serif" font-size="66" font-weight="600" fill="#1f2328" letter-spacing="0.5">Christopher Couspeyre</text>
+
+  <line x1="72" y1="196" x2="470" y2="196" stroke="#9a6b1f" stroke-width="2" stroke-linecap="round" stroke-dasharray="400" stroke-dashoffset="400">
+    <animate attributeName="stroke-dashoffset" values="400;0" dur="1.4s" begin="0.3s" fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1"/>
+  </line>
+
+  <text x="72" y="236" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="18" fill="#3b4149">
+    Full-stack &amp; systems developer<tspan fill="#adb3ba"> — </tspan>Rust<tspan fill="#adb3ba"> · </tspan>TypeScript<tspan fill="#adb3ba"> · </tspan>Python
+  </text>
+
+  <text x="72" y="266" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="14" fill="#59636e">
+    Local-first alternatives to costly proprietary software — security, encrypted messaging, on-device AI.
+  </text>
+
+  <g transform="translate(72,296)">
+    <circle cx="5" cy="-4" r="4" fill="#1a7f37">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="18" y="0" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13" fill="#59636e">Available for remote engineering roles</text>
+  </g>
+
+  <text x="1128" y="300" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13" fill="#8b949e">github.com/chrlstopher-c</text>
+</svg>
