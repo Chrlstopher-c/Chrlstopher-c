@@ -51,7 +51,7 @@
   <a href="https://github.com/Chrlstopher-c/aegis"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/proj-aegis-dark.svg"/><img src="./assets/proj-aegis-light.svg" width="100%" alt="aegis"/></picture></a>
 </td>
 <td width="50%">
-  <a href="https://github.com/Chrlstopher-c/vitrail"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/proj-vitrail-dark.svg"/><img src="./assets/proj-vitrail-light.svg" width="100%" alt="vitrail"/></picture></a>
+  <a href="https://github.com/Chrlstopher-c/ccremote"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/proj-ccremote-dark.svg"/><img src="./assets/proj-ccremote-light.svg" width="100%" alt="ccremote"/></picture></a>
 </td>
 </tr>
 <tr>
@@ -59,15 +59,15 @@
   <a href="https://github.com/Chrlstopher-c/nullnode"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/proj-nullnode-dark.svg"/><img src="./assets/proj-nullnode-light.svg" width="100%" alt="nullnode"/></picture></a>
 </td>
 <td width="50%">
-  <a href="https://github.com/Chrlstopher-c/echohub"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/proj-echohub-dark.svg"/><img src="./assets/proj-echohub-light.svg" width="100%" alt="echohub"/></picture></a>
+  <a href="https://github.com/Chrlstopher-c/echohub-v2"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/proj-echohub-v2-dark.svg"/><img src="./assets/proj-echohub-v2-light.svg" width="100%" alt="echohub-v2"/></picture></a>
 </td>
 </tr>
 <tr>
 <td width="50%">
-  <a href="https://github.com/Chrlstopher-c/alto"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/proj-alto-dark.svg"/><img src="./assets/proj-alto-light.svg" width="100%" alt="alto"/></picture></a>
+  <a href="https://github.com/Chrlstopher-c/vela"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/proj-vela-dark.svg"/><img src="./assets/proj-vela-light.svg" width="100%" alt="vela"/></picture></a>
 </td>
 <td width="50%">
-  <a href="https://github.com/Chrlstopher-c/vela"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/proj-vela-dark.svg"/><img src="./assets/proj-vela-light.svg" width="100%" alt="vela"/></picture></a>
+  <a href="https://github.com/Chrlstopher-c/vigie"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/proj-vigie-dark.svg"/><img src="./assets/proj-vigie-light.svg" width="100%" alt="vigie"/></picture></a>
 </td>
 </tr>
 </table>

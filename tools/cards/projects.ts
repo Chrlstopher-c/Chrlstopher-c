@@ -12,11 +12,11 @@ interface Proj {
 }
 const PROJECTS: Proj[] = [
   { slug: 'aegis', name: 'aegis', desc: 'Real-time Linux EDR antivirus, 100% local. Hybrid YARA + eBPF detection.', tags: ['Rust', 'eBPF', 'YARA'] },
-  { slug: 'vitrail', name: 'vitrail', desc: 'Reversible network visibility: process attribution + cooperative TLS decryption + guaranteed kill-switch.', tags: ['Rust', 'nftables'] },
+  { slug: 'ccremote', name: 'ccremote', desc: 'Remote-control harness for Claude Code — drive AI coding agents from any device, real-time task & quota arbitration.', tags: ['TypeScript', 'WebSocket'] },
   { slug: 'nullnode', name: 'nullnode', desc: 'Sovereign P2P encrypted messaging — WebRTC + blind relay, zero-knowledge.', tags: ['TypeScript', 'WebRTC'] },
-  { slug: 'echohub', name: 'echohub', desc: 'Local LLM manager: GGUF + AWQ/GPTQ, HuggingFace browser, persistent chat.', tags: ['TypeScript', 'vLLM'] },
-  { slug: 'alto', name: 'alto', desc: 'Hands-free voice ↔ Claude Code: real-time STT/TTS, full-duplex echo guard, 6s→2s latency.', tags: ['Tauri', 'Agent SDK'] },
+  { slug: 'echohub-v2', name: 'echohub-v2', desc: 'Local LLM manager — GGUF + AWQ/GPTQ, HuggingFace browser, persistent chat.', tags: ['TypeScript', 'Python'] },
   { slug: 'vela', name: 'vela', desc: 'Linux file manager with an integrated code editor.', tags: ['Tauri', 'React'] },
+  { slug: 'vigie', name: 'vigie', desc: 'Native iOS client for ccremote — SwiftUI, compiled on Arch Linux via xtool.', tags: ['Swift', 'SwiftUI'] },
 ]
 
 interface Theme {

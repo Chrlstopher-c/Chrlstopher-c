@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="460" height="158" viewBox="0 0 460 158" role="img">
-  <defs><linearGradient id="g-vitrail-dark" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#161b22"/><stop offset="1" stop-color="#12161c"/></linearGradient></defs>
-  <rect x="0.5" y="0.5" width="459" height="157" rx="12" fill="url(#g-vitrail-dark)" stroke="#2a313c"/>
-  <text x="24" y="38" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="15" font-weight="700" fill="#e0b579">vitrail</text>
-  <text x="24" y="66" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#c1c9d2">Reversible network visibility: process</text><text x="24" y="85" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#c1c9d2">attribution + cooperative TLS decryption +</text><text x="24" y="104" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#c1c9d2">guaranteed kill-switch.</text><rect x="24" y="124" width="48.8" height="22" rx="11" fill="#0f141a" stroke="#21262d"/>
-        <text x="48.4" y="139" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#8b929c">Rust</text><rect x="80.8" y="124" width="77.6" height="22" rx="11" fill="#0f141a" stroke="#21262d"/>
-        <text x="119.6" y="139" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#8b929c">nftables</text>
-</svg>

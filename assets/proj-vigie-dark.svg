@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="158" viewBox="0 0 460 158" role="img">
+  <defs><linearGradient id="g-vigie-dark" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#161b22"/><stop offset="1" stop-color="#12161c"/></linearGradient></defs>
+  <rect x="0.5" y="0.5" width="459" height="157" rx="12" fill="url(#g-vigie-dark)" stroke="#2a313c"/>
+  <text x="24" y="38" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="15" font-weight="700" fill="#e0b579">vigie</text>
+  <text x="24" y="66" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#c1c9d2">Native iOS client for ccremote — SwiftUI,</text><text x="24" y="85" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="#c1c9d2">compiled on Arch Linux via xtool.</text><rect x="24" y="124" width="56" height="22" rx="11" fill="#0f141a" stroke="#21262d"/>
+        <text x="52" y="139" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#8b929c">Swift</text><rect x="88" y="124" width="70.4" height="22" rx="11" fill="#0f141a" stroke="#21262d"/>
+        <text x="123.2" y="139" text-anchor="middle" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#8b929c">SwiftUI</text>
+</svg>
