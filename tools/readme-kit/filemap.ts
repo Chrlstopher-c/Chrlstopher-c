@@ -1,13 +1,13 @@
 /**
  * Carte des fichiers importants (binaire, service, config, données, logs) — dark + light.
  * Usage : bun run filemap.ts <spec.json> <dossier-sortie> [base]
- * Spec : { groups: [{ label, entries: [{ path, role, kind? }] }] }   kind ∈ file|dir|socket|log|port
+ * Spec : { groups: [{ label, entries: [{ path, role, kind? }] }] }   kind ∈ file|dir|socket|log|port|rule|agent
  */
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
 import { join } from 'node:path'
 import { THEMES, MONO, SANS, esc, type Theme } from './palette.ts'
 
-interface Entry { path: string; role: string; kind?: 'file' | 'dir' | 'socket' | 'log' | 'port' }
+interface Entry { path: string; role: string; kind?: 'file' | 'dir' | 'socket' | 'log' | 'port' | 'rule' | 'agent' }
 interface Group { label: string; entries: Entry[] }
 interface Spec { groups: Group[] }
 
@@ -28,6 +28,10 @@ function glyph(kind: Entry['kind'], x: number, y: number, t: Theme): string {
       return `<path d="M${x + 2} ${y - 9} h14 v16 h-14 z M${x + 5} ${y - 4} h8 M${x + 5} ${y} h8 M${x + 5} ${y + 4} h5" fill="none" stroke="${c}" stroke-width="1.4"/>`
     case 'port':
       return `<path d="M${x + 2} ${y - 6} h16 M${x + 2} ${y - 1} h16 M${x + 2} ${y + 4} h10" stroke="${c}" stroke-width="1.6" stroke-linecap="round"/>`
+    case 'rule':
+      return `<path d="M${x + 10} ${y - 10} l8 3 v7 c0 5 -4 9 -8 11 c-4 -2 -8 -6 -8 -11 v-7 z" fill="none" stroke="${c}" stroke-width="1.4"/>`
+    case 'agent':
+      return `<rect x="${x + 2}" y="${y - 8}" width="16" height="14" rx="4" fill="none" stroke="${c}" stroke-width="1.4"/><circle cx="${x + 7}" cy="${y - 2}" r="1.4" fill="${c}"/><circle cx="${x + 13}" cy="${y - 2}" r="1.4" fill="${c}"/>`
     default:
       return `<path d="M${x + 3} ${y - 9} h9 l5 5 v11 h-14 z" fill="none" stroke="${c}" stroke-width="1.4"/>`
   }

@@ -1,0 +1,160 @@
+{
+ "w": 1040,
+ "h": 520,
+ "groups": [
+  {
+   "x": 20,
+   "y": 20,
+   "w": 190,
+   "h": 180,
+   "label": "you"
+  },
+  {
+   "x": 250,
+   "y": 20,
+   "w": 390,
+   "h": 480,
+   "label": "Raspberry Pi \u00b7 control plane"
+  },
+  {
+   "x": 710,
+   "y": 20,
+   "w": 310,
+   "h": 340,
+   "label": "PC \u00b7 the fleet"
+  },
+  {
+   "x": 710,
+   "y": 390,
+   "w": 310,
+   "h": 110,
+   "label": "VPS \u00b7 fallback"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "you",
+   "x": 40,
+   "y": 70,
+   "w": 150,
+   "h": 64,
+   "title": "You",
+   "sub": "one thread per subject"
+  },
+  {
+   "id": "orch",
+   "x": 280,
+   "y": 70,
+   "w": 330,
+   "h": 64,
+   "title": "Orchestrator",
+   "sub": "one SDK session, Opus, all threads",
+   "accent": true
+  },
+  {
+   "id": "mandat",
+   "x": 280,
+   "y": 190,
+   "w": 330,
+   "h": 64,
+   "title": "Mandate",
+   "sub": "objective, scope, access, budget"
+  },
+  {
+   "id": "appro",
+   "x": 280,
+   "y": 310,
+   "w": 330,
+   "h": 64,
+   "title": "Your approval",
+   "sub": "the first one, then the thread runs alone",
+   "accent": true
+  },
+  {
+   "id": "registre",
+   "x": 280,
+   "y": 420,
+   "w": 330,
+   "h": 64,
+   "title": "Registry (SQLite)",
+   "sub": "written before anything starts"
+  },
+  {
+   "id": "sup",
+   "x": 740,
+   "y": 70,
+   "w": 250,
+   "h": 64,
+   "title": "Supervisor",
+   "sub": "executes, never decides"
+  },
+  {
+   "id": "worker",
+   "x": 740,
+   "y": 168,
+   "w": 250,
+   "h": 64,
+   "title": "A team is a worker",
+   "sub": "process + SDK session + worktree",
+   "accent": true
+  },
+  {
+   "id": "sous",
+   "x": 740,
+   "y": 266,
+   "w": 250,
+   "h": 64,
+   "title": "Sub-agents",
+   "sub": "delegated inside the lead"
+  },
+  {
+   "id": "vps",
+   "x": 740,
+   "y": 418,
+   "w": 250,
+   "h": 60,
+   "title": "Same supervisor",
+   "sub": "when the PC is off"
+  }
+ ],
+ "edges": [
+  {
+   "from": "you",
+   "to": "orch",
+   "both": true,
+   "label": "your thread"
+  },
+  {
+   "from": "orch",
+   "to": "mandat",
+   "label": "creer_equipe"
+  },
+  {
+   "from": "mandat",
+   "to": "appro"
+  },
+  {
+   "from": "appro",
+   "to": "registre"
+  },
+  {
+   "from": "registre",
+   "to": "sup",
+   "label": "dispatch"
+  },
+  {
+   "from": "sup",
+   "to": "worker",
+   "label": "spawn"
+  },
+  {
+   "from": "worker",
+   "to": "sous"
+  },
+  {
+   "from": "registre",
+   "to": "vps",
+   "dashed": true
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "title": "A mission, end to end",
+ "steps": [
+  {
+   "title": "You ask",
+   "note": "Your message joins the orchestrator's input queue, read by one session at a time."
+  },
+  {
+   "title": "The orchestrator proposes",
+   "cmd": "creer_equipe",
+   "note": "Two guards run before anything is written: quota read less than 30 minutes ago, and no identical wave in the last 24 hours."
+  },
+  {
+   "title": "A mandate is written",
+   "note": "Objective, scope, access, budget and stop rule, stored as a proposal. Nothing runs yet: the orchestrator cannot start a team itself."
+  },
+  {
+   "title": "You approve, the first time",
+   "note": "A new thread has no autonomy window, so its first mandate waits for your click. Once you open one, the next mandates start without you."
+  },
+  {
+   "title": "The mission is registered",
+   "note": "Written as planned before the worker starts, so a PC that never answers still leaves a trace to reconcile."
+  },
+  {
+   "title": "A worker is spawned",
+   "note": "On the PC: one process, one SDK session, one git worktree. That worker is the team."
+  },
+  {
+   "title": "The lead works",
+   "note": "It delegates sub-agents inside its own session. Your mid-flight messages are course corrections, never orders to stop."
+  },
+  {
+   "title": "Closing, then lessons",
+   "note": "Retry, definitive failure or escalation. Lessons are extracted from the transcript and pushed into the next mandate."
+  }
+ ]
+}

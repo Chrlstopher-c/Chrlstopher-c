@@ -1,0 +1,5 @@
+{"title":"How much you are asked","steps":[
+{"title":"The first time, you click","note":"A fresh thread has no window, so its first mandate waits for your approval and starts nothing until you give it."},
+{"title":"You open a window","cmd":"demander_fenetre_autonomie","note":"Between 5 minutes and 14 days, with a ceiling on how many teams may start on their own. Bounded on purpose: a window is a loan, not a right."},
+{"title":"It runs without you","note":"Inside the window it starts teams, schedules its own reminders and compacts its own context. You watch, you correct course, you do not gate."},
+{"title":"The clock or the ceiling closes it","note":"Past either one it asks again. Taking the hand back with a manual approval reopens the count from that moment."}]}

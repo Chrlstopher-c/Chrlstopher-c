@@ -1,0 +1,79 @@
+{
+ "groups": [
+  {
+   "label": "Before a team starts",
+   "entries": [
+    {
+     "path": "fuel guard",
+     "role": "refuses a mandate built on a quota reading older than 30 minutes",
+     "kind": "rule"
+    },
+    {
+     "path": "wave guard",
+     "role": "refuses one more identical wave within 24 hours",
+     "kind": "rule"
+    },
+    {
+     "path": "fleet ceiling",
+     "role": "refuses a new mission when an account is rejected or past its threshold",
+     "kind": "rule"
+    }
+   ]
+  },
+  {
+   "label": "While it runs",
+   "entries": [
+    {
+     "path": "plancher-deni",
+     "role": "16 Bash patterns refused in every permission mode, bypass included",
+     "kind": "rule"
+    },
+    {
+     "path": "anti-boucle",
+     "role": "a Haiku judge rules progress or loop at cost milestones; doubt never means loop",
+     "kind": "agent"
+    },
+    {
+     "path": "budget",
+     "role": "spending ceiling per team, set at the mandate or adjusted later",
+     "kind": "rule"
+    },
+    {
+     "path": "autonomy window",
+     "role": "a window lasts 5 minutes to 14 days, with a ceiling of teams that may start alone",
+     "kind": "rule"
+    },
+    {
+     "path": "pause",
+     "role": "marks the team paused before interrupting; queued messages are never lost or replayed",
+     "kind": "rule"
+    }
+   ]
+  },
+  {
+   "label": "When something dies",
+   "entries": [
+    {
+     "path": "fencing by epoch",
+     "role": "a stale epoch is rejected, and on a tie the newcomer always loses",
+     "kind": "rule"
+    },
+    {
+     "path": "process revalidation",
+     "role": "reads the start time in /proc, so a recycled pid is not mistaken for a live worker",
+     "kind": "rule"
+    },
+    {
+     "path": "emergency stop",
+     "role": "a recurring drill kills a real canary process by exact pid, never by name pattern",
+     "kind": "rule"
+    },
+    {
+     "path": "relance",
+     "role": "retries transient failures with backoff, escalates structural ones instead",
+     "kind": "rule"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,4 @@
+{"title":"Which model does what","tiles":[
+{"value":"Opus","label":"the orchestrator you talk to, one session for every thread","sub":"options-orchestrateur.ts"},
+{"value":"Opus 5","unit":"high","label":"team leads by default, arbitrated per mandate","sub":"6.40 $ per team, against 0.67 $ on Sonnet"},
+{"value":"Haiku 4.5","label":"judges loop or progress, and extracts the lessons","sub":"max 5 lessons, 1 200 characters, pushed into the next mandate"}]}
