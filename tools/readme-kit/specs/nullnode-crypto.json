@@ -1,0 +1,12 @@
+{"groups":[
+{"label":"identity · what makes an account","entries":[
+{"path":"BIP39 seed","role":"twelve words, generated locally. Lose them and the account is gone: nobody can reset it","kind":"rule"},
+{"path":"crypto_kx_seed_keypair","role":"derives the X25519 keypair from that seed, so the same words always rebuild the same identity","kind":"rule"},
+{"path":"crypto_pwhash + secretbox","role":"Argon2 over your PIN, wrapping the seed at rest on the device","kind":"rule"}]},
+{"label":"conversation · what protects a message","entries":[
+{"path":"crypto_kx_*_session_keys","role":"one pair of session keys per peer, derived at connection time","kind":"rule"},
+{"path":"chacha20poly1305_ietf","role":"encrypts and authenticates every message on the direct channel","kind":"rule"},
+{"path":"SAS, four words","role":"derived from both session keys; read them aloud and a man in the middle cannot match them","kind":"agent"}]},
+{"label":"relay · what it is never given","entries":[
+{"path":"crypto_box_seal","role":"the WebRTC offer and answer are sealed to the recipient's public key before the relay sees them","kind":"rule"},
+{"path":"backup blob","role":"roster and history encrypted with a key derived from your seed; the relay stores bytes it cannot open","kind":"rule"}]}]}

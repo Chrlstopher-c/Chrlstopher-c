@@ -1,0 +1,17 @@
+{"groups":[
+{"label":"Installed for your user","entries":[
+{"path":"~/.local/bin/vela-bin","role":"the binary, copied by install.sh from the release build","kind":"file"},
+{"path":"~/.local/share/applications/vela.desktop","role":"the launcher, with the WebKit workaround already in its Exec line","kind":"file"},
+{"path":"~/.local/share/dbus-1/services/","role":"the D-Bus service, so a file manager request reaches Vela","kind":"file"}]},
+{"label":"Your configuration","entries":[
+{"path":"~/.config/vela/profiles.json","role":"your layouts: which panel sits in which zone, per profile","kind":"file"},
+{"path":"~/.config/vela/favorites.json","role":"pinned places and their groups","kind":"file"},
+{"path":"~/.config/vela/tags.json","role":"tab colours and tags","kind":"file"},
+{"path":"~/.config/vela/templates/","role":"the templates offered when you create a new file","kind":"dir"}]},
+{"label":"Optional tools, each in its own venv","entries":[
+{"path":"~/.local/share/vela/demucs-venv","role":"stem separation, about 3 GB of torch, installed on demand","kind":"dir"},
+{"path":"~/.local/share/vela/dl-venv","role":"yt-dlp and spotdl for the downloader","kind":"dir"}]},
+{"label":"Runtime","entries":[
+{"path":"$XDG_RUNTIME_DIR/vela-control.sock","role":"the MCP socket: one path, so one instance at a time talks to Claude","kind":"socket"},
+{"path":"~/.local/share/vela/logs/","role":"downloads and background jobs","kind":"log"},
+{"path":"logs/dev.log","role":"development only, written by start.sh on port 1430","kind":"log"}]}]}

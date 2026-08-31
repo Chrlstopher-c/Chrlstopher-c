@@ -1,0 +1,5 @@
+{"title":"Run it","steps":[
+{"title":"Have a GPU and Docker","note":"NVIDIA with CUDA 12.8 or newer. Driver 570+ for an RTX 50xx. The image is built on the CUDA devel base because llama-cpp-python is compiled at build time, not downloaded."},
+{"title":"Set the two things that matter","cmd":"cp .env.example .env","note":"ATELIER_JETON must hold a random secret: empty means the model is refused any code execution. Never set GGML_CUDA_ENABLE_UNIFIED_MEMORY."},
+{"title":"Bring the stack up","cmd":"docker compose up -d","note":"API, nginx, SearXNG and the execution workshop. Only the web port is published; the rest talk on the internal network."},
+{"title":"Open it","cmd":"http://localhost:37920","note":"Search a model, download it, load it. For UI work without compiling CUDA, ./start.sh runs uvicorn and Vite natively instead."}]}

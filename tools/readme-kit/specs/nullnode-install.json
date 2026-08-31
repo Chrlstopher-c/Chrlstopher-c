@@ -1,0 +1,5 @@
+{"title":"Run it","steps":[
+{"title":"In a browser","cmd":"./start.sh","note":"Starts the local relay on ws://127.0.0.1:8791, then Vite on http://localhost:5180. Logs in logs/dev.log, stop with ./stop.sh."},
+{"title":"As a desktop app","cmd":"./start-desktop.sh","note":"Same relay, in a Tauri window. On Nvidia with Wayland it switches the renderer and falls back to XWayland by itself."},
+{"title":"Build for production","cmd":"bun run build","note":"Type-check and bundle to dist, about 2 MB. bun run tauri:build produces the desktop binary."},
+{"title":"Host your own relay","cmd":"cd relay && ./start.sh","note":"Bun, one port, no database. Point the app at it with VITE_RELAY_URL, or pick it in Settings at runtime."}]}

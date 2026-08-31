@@ -1,0 +1,5 @@
+{"title":"Install on Arch","steps":[
+{"title":"System packages","cmd":"pacman -S webkit2gtk-4.1 gtk3 base-devel","note":"Plus the GStreamer plugins and ffmpeg for the media side, and python for the optional venvs. Rust and Bun through their own installers."},
+{"title":"Build and install","cmd":"./install.sh","note":"Runs the release build, copies the binary to ~/.local/bin/vela-bin, then smoke-tests it: if the process does not stay up, the script stops and shows you the log."},
+{"title":"Optional tools, in the background","note":"Dedicated venvs for demucs (about 3 GB of torch on first run) and for yt-dlp with spotdl, plus tesseract and pandoc if you want OCR and conversion. Skip the stems with VELA_SKIP_STEMS=1."},
+{"title":"Launch it","cmd":"WEBKIT_DISABLE_DMABUF_RENDERER=1 vela-bin","note":"Wrap that in ~/.local/bin/vela and bind it: bind = SUPER, E, exec, ~/.local/bin/vela. install.sh also writes the desktop entry and the D-Bus service."}]}

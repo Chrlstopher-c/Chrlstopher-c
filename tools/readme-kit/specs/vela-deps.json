@@ -1,0 +1,4 @@
+{"title":"What it stands on","tiles":[
+{"value":"Tauri v2","label":"Rust backend, React 19 and Tailwind 4 in a WebKitGTK window","sub":"CodeMirror 6, xterm.js, pdf.js, SheetJS"},
+{"value":"libgit2","label":"Git without ever shelling out to the git binary","sub":"status badges, staging, branches, inline diff"},
+{"value":"GStreamer","label":"GPU decoding for the native player, around WebKit's video element","sub":"ffmpeg and the image crate for the editing tools"}]}

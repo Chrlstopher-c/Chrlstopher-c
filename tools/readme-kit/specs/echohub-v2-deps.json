@@ -1,0 +1,4 @@
+{"title":"What it stands on","tiles":[
+{"value":"CUDA 12.8","label":"the devel image, because llama-cpp-python is compiled here rather than downloaded","sub":"a runtime image cannot build it"},
+{"value":"2 engines","label":"llama.cpp through its native server, and vLLM in a versioned venv","sub":"one model loaded at a time, under a supervisor"},
+{"value":"188 / 197","unit":"files","label":"Python and TypeScript, 31 756 lines on the backend alone","sub":"FastAPI and React 18, strict TypeScript"}]}

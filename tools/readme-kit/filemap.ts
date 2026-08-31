@@ -5,7 +5,7 @@
  */
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
 import { join } from 'node:path'
-import { THEMES, MONO, SANS, esc, type Theme } from './palette.ts'
+import { THEMES, MONO, SANS, esc, wrap, type Theme } from './palette.ts'
 
 interface Entry { path: string; role: string; kind?: 'file' | 'dir' | 'socket' | 'log' | 'port' | 'rule' | 'agent' }
 interface Group { label: string; entries: Entry[] }
@@ -37,14 +37,21 @@ function glyph(kind: Entry['kind'], x: number, y: number, t: Theme): string {
   }
 }
 
+/** Largeur de la colonne de droite, en caractères, pour la police de 12,5 px. */
+const ROLE_COLS = 84
+
 function group(g: Group, y: number, t: Theme): { svg: string; h: number } {
-  const h = HEAD + g.entries.length * ROW + 12
+  const wrapped = g.entries.map((e) => wrap(e.role, ROLE_COLS).slice(0, 2))
+  let ry = y + HEAD + 18
   const rows = g.entries.map((e, i) => {
-    const ry = y + HEAD + i * ROW + 18
-    return `${glyph(e.kind, PAD + 16, ry, t)}
+    const lines = wrapped[i]
+    const svg = `${glyph(e.kind, PAD + 16, ry, t)}
     <text x="${PAD + 46}" y="${ry + 3}" font-family="${MONO}" font-size="12.5" fill="${t.title}">${esc(e.path)}</text>
-    <text x="${PAD + 470}" y="${ry + 3}" font-family="${SANS}" font-size="12.5" fill="${t.text}">${esc(e.role)}</text>`
+    ${lines.map((l, k) => `<text x="${PAD + 470}" y="${ry + 3 + k * 17}" font-family="${SANS}" font-size="12.5" fill="${t.text}">${esc(l)}</text>`).join('\n    ')}`
+    ry += lines.length > 1 ? ROW + 17 : ROW
+    return svg
   })
+  const h = ry - y - 18 + 12
   return {
     h,
     svg: `<rect x="${PAD}" y="${y}" width="${W - 2 * PAD}" height="${h}" rx="12" fill="${t.box}" stroke="${t.boxBorder}"/>

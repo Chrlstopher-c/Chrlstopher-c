@@ -1,0 +1,4 @@
+{"title":"Remove it (no script for this one)","steps":[
+{"title":"Stop the stack","cmd":"docker compose down","note":"Containers go, volumes stay. Bring it back up and you find your models and conversations where you left them."},
+{"title":"Decide about the models","cmd":"docker volume rm echohub_models","note":"This is the one that hurts: tens of gigabytes you would have to download again. Keep it unless you are short on disk."},
+{"title":"Erase the rest","cmd":"docker volume rm echohub_userdata echohub_ateliers echohub_searxng","note":"Conversations, workshop files and search configuration. Then docker rmi echohub:v2 echohub-atelier:v2 for the images."}]}

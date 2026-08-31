@@ -1,0 +1,5 @@
+{"title":"Measured on the real machines","tiles":[
+{"value":"41","unit":"vs 80","label":"layers really in the GGUF, against 80 guessed from the name","sub":"Qwen3.6-35B-A3B, COMPATIBILITE-GPU.md"},
+{"value":"436","unit":"MB","label":"real weight per layer, against the 150 MB the v1 assumed","sub":"same model, read from the file"},
+{"value":"12","unit":"s","label":"to load, against minutes with VRAM stuck at 2 GB","sub":"WSL2, RTX 5080, then 19.6 tok/s"},
+{"value":"442","label":"Python test functions, none of them needing a GPU or a network","sub":"the planner is pure, so a budget can be injected"}]}

@@ -1,0 +1,5 @@
+{"title":"Working in it","steps":[
+{"title":"Pick a profile","note":"Explorer for browsing, Edition for listing and editor side by side. Or compose your own: four zones, one panel each, saved and switchable from the top bar."},
+{"title":"Open the file, do not just find it","note":"CodeMirror with syntax highlighting, Markdown preview, inline images, archives browsed in place, spreadsheets with a live filter. Files over a megabyte load in chunks."},
+{"title":"Act on what you selected","note":"The right-click menu adapts: several images become a PDF, CSVs merge, a messy folder sorts itself by type or date, undoable. Media tools open a docked editing HUD."},
+{"title":"Or just say it","note":"Ctrl+K searches files across the disk, actions and places at once. In the built-in terminal, claude drives the window through a local MCP server on a Unix socket."}]}

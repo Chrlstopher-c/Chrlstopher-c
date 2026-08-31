@@ -1,0 +1,14 @@
+{"groups":[
+{"label":"On your device · browser storage","entries":[
+{"path":"nullnode.acct.<address>.roster","role":"your contacts, one namespace per account so several identities never mix","kind":"file"},
+{"path":"nullnode.acct.<address>.history","role":"the conversations you keep locally","kind":"file"},
+{"path":"the sealed vault","role":"your twelve words, encrypted with Argon2 over your PIN; opened into session memory after unlock","kind":"rule"}]},
+{"label":"On the relay · opaque bytes only","entries":[
+{"path":"relay/data/envelopes.json","role":"sealed messages waiting for someone offline, capped and expiring after seven days","kind":"file"},
+{"path":"relay/data/backups.json","role":"one encrypted blob per address, overwritten at each backup","kind":"file"},
+{"path":"nullnode-backup-*.ncb","role":"the same blob, exported by hand to a file you keep","kind":"file"}]},
+{"label":"Ports and logs","entries":[
+{"path":"localhost:5180","role":"the app in development","kind":"port"},
+{"path":"127.0.0.1:8791","role":"the relay (RELAY_PORT), reachable over the LAN or a TLS tunnel","kind":"port"},
+{"path":"logs/dev.log · logs/desktop.log","role":"app output, with the pid beside it","kind":"log"},
+{"path":"relay/logs/relay.log","role":"who connected and what was routed, never what it contained","kind":"log"}]}]}

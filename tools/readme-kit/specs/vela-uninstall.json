@@ -1,0 +1,4 @@
+{"title":"Uninstall (no script for this one)","steps":[
+{"title":"The app","cmd":"rm ~/.local/bin/vela-bin ~/.local/bin/vela","note":"Plus the desktop entry, the D-Bus service and the icon under ~/.local/share."},
+{"title":"The heavy optional parts","cmd":"rm -rf ~/.local/share/vela","note":"That is where the venvs live, torch included. Several gigabytes come back with it."},
+{"title":"Your settings","cmd":"rm -rf ~/.config/vela","note":"Profiles, favourites, tags and templates. Keep this folder if you plan to reinstall."}]}

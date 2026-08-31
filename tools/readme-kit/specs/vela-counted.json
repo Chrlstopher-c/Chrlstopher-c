@@ -1,0 +1,4 @@
+{"title":"Counted in the repository","tiles":[
+{"value":"151","label":"Tauri commands: everything touching the system crosses that boundary","sub":"generate_handler! in src-tauri/src/lib.rs"},
+{"value":"42","unit":"modules","label":"Rust, 9 036 lines, against 143 TypeScript files on the front","sub":"find src-tauri/src -name '*.rs'"},
+{"value":"3","label":"unit test files: fuzzy search, paths, smart actions","sub":"Playwright cannot drive Tauri invoke, so the rest is manual"}]}

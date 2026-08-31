@@ -1,0 +1,12 @@
+{"groups":[
+{"label":"What the authentication does, and does not","entries":[
+{"path":"nginx basic auth","role":"protects the door: one account, no session, no revocation, password sent on every request","kind":"rule"},
+{"path":"no application auth","role":"there is no per-user model inside the app. Whoever passes nginx is the owner","kind":"rule"}]},
+{"label":"What the model can do in the workshop","entries":[
+{"path":"root, with network","role":"it installs what it lacks with apt and pip, and files persist between messages","kind":"agent"},
+{"path":"the container boundary","role":"isolation comes from the boundary, not from lowered privileges: no host path, no docker.sock","kind":"rule"},
+{"path":"4 GB · 4 CPU · 512 pids","role":"bounded by Compose, so a runaway command cannot drown the machine","kind":"rule"},
+{"path":"empty ATELIER_JETON","role":"closed fallback: no token, no execution","kind":"rule"}]},
+{"label":"Never","entries":[
+{"path":"a public tunnel","role":"anyone who finds the URL gets your conversations and code execution on your machine","kind":"rule"},
+{"path":"remote access","role":"acces-distant.ps1 sets up a private Tailscale network instead, exposing nothing","kind":"rule"}]}]}

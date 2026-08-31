@@ -1,0 +1,5 @@
+{"title":"Counted in the repository","tiles":[
+{"value":"80","unit":"files","label":"TypeScript across the app and the relay, 5 759 lines","sub":"find src relay/src -name '*.ts*'"},
+{"value":"8","label":"libsodium primitives, each with one job","sub":"see the table above"},
+{"value":"2.1","unit":"MB","label":"the production bundle, WebGL scene included","sub":"du -sh dist"},
+{"value":"0","label":"automated tests: everything here was checked by hand, two windows at a time","sub":"no test runner in package.json"}]}

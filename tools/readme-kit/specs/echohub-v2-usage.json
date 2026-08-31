@@ -1,0 +1,5 @@
+{"title":"A session","steps":[
+{"title":"Find a model","note":"Search Hugging Face from the Models screen. Capabilities are read from the announcements and traced, and a VRAM verdict tells you whether it fits before you download."},
+{"title":"Download it","note":"Resumable, multi-part aware, into a named volume. The local registry and a disk inventory keep track of what you already have."},
+{"title":"Load it","note":"The plan appears with its justification: how many layers on the GPU, what context, which cache. The frontend displays it, it never recomputes it."},
+{"title":"Talk, and give it tools","note":"Streaming answers, branches and non-destructive edits, and eleven tools you enable per conversation, each with its token cost measured by the loaded model's own tokenizer."}]}

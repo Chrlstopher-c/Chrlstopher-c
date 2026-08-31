@@ -1,0 +1,6 @@
+{"title":"The load planner, step by step","steps":[
+{"title":"Read the file","note":"Architecture, block_count and tensor sizes come from the GGUF itself, never from its name."},
+{"title":"Measure the machine","note":"Free VRAM and RAM through NVML, with nvidia-smi as fallback. A value it cannot measure stays null rather than becoming an estimate."},
+{"title":"Detect the platform","note":"Native Linux, WSL2 or a given driver each impose different constraints, and WSL2 is where the wrong guess costs the most."},
+{"title":"Produce a plan","note":"GPU layers, context, batch, KV cache type and environment, each value carrying the reason it was chosen."},
+{"title":"Degrade, never escalate","note":"After a failed load it lowers the plan and inherits the constraint. The v1 raised the context after each failure until the machine gave up."}]}

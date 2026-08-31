@@ -1,0 +1,5 @@
+{"title":"Talking to someone","steps":[
+{"title":"Create an identity","note":"Twelve words are generated on your device and the keypair is derived from them. A PIN encrypts those words at rest. Write them down: nothing else can bring the account back."},
+{"title":"Share your address","note":"null: followed by your public key, with a three-word callsign and a PSEUDO#0000 handle. Send it however you like, it is public by design."},
+{"title":"Ask, and be accepted","note":"Paste their address in Discover and send. The request waits on the relay if they are offline, sealed, and lands when they come back."},
+{"title":"Check the four words","note":"Once the channel is up, both sides see four words derived from the session keys. Read them aloud. If they match, nobody is in the middle."}]}

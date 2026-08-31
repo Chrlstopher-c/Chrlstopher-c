@@ -1,0 +1,4 @@
+{"title":"What it stands on","tiles":[
+{"value":"libsodium","label":"the sumo build, because the standard one has no Argon2","sub":"crypto_pwhash is what protects the seed at rest"},
+{"value":"React 19","label":"with three.js for the entry scene and Tailwind for the rest","sub":"Vite, Bun, 461 MB of node_modules"},
+{"value":"Tauri 2","label":"desktop shell and a small Rust daemon that holds presence","sub":"the daemon never touches a key"}]}

@@ -1,0 +1,4 @@
+{"title":"Erase yourself","steps":[
+{"title":"There is no button for it yet","note":"The app has no reset or log-out. Deleting an identity is manual today, and that is a gap rather than a design choice."},
+{"title":"In the browser","note":"Clear every localStorage key starting with nullnode. That removes the roster, the history and the sealed vault. Without your twelve words the account is then gone for good."},
+{"title":"On the relay","note":"Drop your address from relay/data/envelopes.json and relay/data/backups.json. Nothing in the protocol lets a client ask for that remotely."}]}

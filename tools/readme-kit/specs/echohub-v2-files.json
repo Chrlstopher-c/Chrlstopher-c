@@ -1,0 +1,19 @@
+{"groups":[
+{"label":"Named volumes · where the weight is","entries":[
+{"path":"echohub_models","role":"downloaded models, tens of gigabytes; mounted at /data/models","kind":"dir"},
+{"path":"echohub_userdata","role":"the SQLite database, configuration and journals, at /data/user","kind":"dir"},
+{"path":"echohub_ateliers","role":"the workshop workspace, shared between the backend and the execution container","kind":"dir"},
+{"path":"echohub_searxng","role":"the local search instance configuration","kind":"dir"}]},
+{"label":"Ports · one published, three not","entries":[
+{"path":"37920","role":"the web interface behind nginx, the only port exposed to your machine","kind":"port"},
+{"path":"37921","role":"the FastAPI API, bound to 127.0.0.1 for debugging","kind":"port"},
+{"path":"37922","role":"the Vite dev server, native mode only","kind":"port"},
+{"path":"searxng · atelier","role":"internal network only, no published port at all","kind":"port"}]},
+{"label":"Configuration","entries":[
+{"path":"ATELIER_JETON","role":"shared secret backend to workshop. Empty means execution is refused, on purpose","kind":"rule"},
+{"path":"ECHOHUB_AUTH_USER / _HASH","role":"nginx basic auth, active by their mere presence; 127.0.0.1 is exempt for the healthcheck","kind":"rule"},
+{"path":"SEARXNG_SECRET","role":"a public default exists in the repo, so override it","kind":"rule"},
+{"path":"HF_TOKEN","role":"only for private or gated Hugging Face repositories","kind":"file"}]},
+{"label":"Logs","entries":[
+{"path":"docker compose logs -f","role":"the container mode","kind":"log"},
+{"path":"logs/backend.log · logs/frontend.log","role":"native mode, emptied at each start.sh","kind":"log"}]}]}
