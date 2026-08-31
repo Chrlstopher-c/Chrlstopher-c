@@ -8,6 +8,10 @@ const token = process.env.GH_TOKEN
 const user = process.env.GH_USER ?? 'Chrlstopher-c'
 if (!token) throw new Error('GH_TOKEN manquant')
 
+// Premier jour du mois courant (UTC) — pour les commits "ce mois".
+const now = new Date()
+const since = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth(), 1)).toISOString()
+
 const query = `
 {
   user(login: "${user}") {
@@ -30,7 +34,7 @@ const query = `
       nodes {
         name stargazerCount forkCount isPrivate
         primaryLanguage { name color }
-        defaultBranchRef { target { ... on Commit { history { totalCount } } } }
+        defaultBranchRef { target { ... on Commit { history(since: "${since}") { totalCount } } } }
       }
     }
   }
