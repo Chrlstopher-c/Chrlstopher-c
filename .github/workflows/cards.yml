@@ -1,0 +1,39 @@
+name: cards
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+
+      - name: Fetch GitHub data
+        working-directory: tools/cards
+        run: bun run fetch.ts
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: ${{ github.repository_owner }}
+
+      - name: Generate cards
+        working-directory: tools/cards
+        run: bun run cards.ts
+
+      - name: Update assets
+        run: |
+          cp tools/cards/out/stats.svg tools/cards/out/langs.svg tools/cards/out/contrib.svg assets/
+          if git diff --quiet -- assets/*.svg; then
+            echo "no change"; exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/*.svg
+          git commit -m "chore: refresh GitHub cards"
+          git push
