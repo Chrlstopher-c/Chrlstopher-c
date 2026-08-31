@@ -63,3 +63,5 @@
 <p align="center">
   <b><a href="https://christophercouspeyre.com">christophercouspeyre.com</a></b>  ·  Open to <b>remote</b> engineering roles  ·  📫 couspeyrechristopher.pro@gmail.com
 </p>
+
+<!-- profile README -->
