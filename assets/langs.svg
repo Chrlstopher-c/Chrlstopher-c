@@ -4,15 +4,15 @@
   <rect x="0.5" y="0.5" width="439" height="174" rx="12" fill="url(#cardbg)" stroke="#2a313c"/>
   <rect x="0.5" y="0.5" width="439" height="2.5" rx="1" fill="#d8a35f"/>
   <text x="26" y="40" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" letter-spacing="1.5" fill="#8b929c">MOST USED LANGUAGES</text>
-   <rect x="26" y="52" width="123.52941176470587" height="9" rx="2" fill="#3572A5"/><rect x="151.52941176470586" y="52" width="112.11764705882354" height="9" rx="2" fill="#3178c6"/><rect x="265.6470588235294" y="52" width="43.64705882352941" height="9" rx="2" fill="#F05138"/><rect x="311.2941176470588" y="52" width="32.235294117647065" height="9" rx="2" fill="#dea584"/><rect x="345.52941176470586" y="52" width="26.529411764705884" height="9" rx="2" fill="#f1e05a"/><circle cx="32" cy="86" r="4.5" fill="#3572A5"/>
-       <text x="46" y="90" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#c1c9d2">Python</text>
-       <text x="414" y="90" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">32.4%</text><circle cx="32" cy="103" r="4.5" fill="#3178c6"/>
-       <text x="46" y="107" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#c1c9d2">TypeScript</text>
-       <text x="414" y="107" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">29.4%</text><circle cx="32" cy="120" r="4.5" fill="#F05138"/>
-       <text x="46" y="124" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#c1c9d2">Swift</text>
-       <text x="414" y="124" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">11.8%</text><circle cx="32" cy="137" r="4.5" fill="#dea584"/>
-       <text x="46" y="141" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#c1c9d2">Rust</text>
-       <text x="414" y="141" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">8.8%</text><circle cx="32" cy="154" r="4.5" fill="#f1e05a"/>
-       <text x="46" y="158" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#c1c9d2">JavaScript</text>
-       <text x="414" y="158" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">7.4%</text>
+   <rect x="26" y="52" width="123.16129032258064" height="9" rx="2" fill="#3178c6"/><rect x="151.16129032258064" y="52" width="98.12903225806451" height="9" rx="2" fill="#3572A5"/><rect x="251.29032258064515" y="52" width="48.064516129032256" height="9" rx="2" fill="#dea584"/><rect x="301.35483870967744" y="52" width="35.54838709677419" height="9" rx="2" fill="#44a51c"/><rect x="338.90322580645164" y="52" width="23.032258064516128" height="9" rx="2" fill="#F05138"/><circle cx="32" cy="86" r="4.5" fill="#3178c6"/>
+       <text x="46" y="90" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#c1c9d2">TypeScript</text>
+       <text x="414" y="90" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">32.3%</text><circle cx="32" cy="103" r="4.5" fill="#3572A5"/>
+       <text x="46" y="107" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#c1c9d2">Python</text>
+       <text x="414" y="107" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">25.8%</text><circle cx="32" cy="120" r="4.5" fill="#dea584"/>
+       <text x="46" y="124" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#c1c9d2">Rust</text>
+       <text x="414" y="124" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">12.9%</text><circle cx="32" cy="137" r="4.5" fill="#44a51c"/>
+       <text x="46" y="141" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#c1c9d2">QML</text>
+       <text x="414" y="141" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">9.7%</text><circle cx="32" cy="154" r="4.5" fill="#F05138"/>
+       <text x="46" y="158" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#c1c9d2">Swift</text>
+       <text x="414" y="158" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">6.5%</text>
 </svg>
