@@ -8,5 +8,5 @@
      <text x="225" y="104" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="15" fill="#e9edf1">commits</text>
      <text x="26" y="140" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13.5" fill="#c1c9d2">1,907 contributions</text>
      <line x1="26" y1="150" x2="414" y2="150" stroke="#2a313c"/>
-     <text x="26" y="166" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">75 repos · 33 public · 17 languages</text>
+     <text x="26" y="166" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12.5" fill="#8b929c">75 repos · 33 public · 13 languages</text>
 </svg>

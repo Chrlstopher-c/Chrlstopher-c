@@ -48,10 +48,13 @@ const repos = u.repositories.totalCount
 const publicRepos = u.repositories.nodes.filter((n) => !n.isPrivate).length
 
 // Langages par VOLUME de code réel (bytes), agrégés sur les repos publics.
+// On exclut les repos de config/rice/desktop : leur QML/code n'est pas du dev
+// applicatif écrit par Chris (Ambxst embarqué, dotfiles) et fausse le portrait.
+const LANG_EXCLUDE_REPOS = new Set(['echo-os', 'ProfileArch', 'animated-wallpaper-hyprland', 'trinity-dotfiles'])
 const BYTES_PER_LINE = 42 // estimation moyenne pour convertir bytes → lignes
 const bytesByLang = new Map<string, { size: number; color: string }>()
 for (const n of u.repositories.nodes) {
-  if (n.isPrivate) continue
+  if (n.isPrivate || LANG_EXCLUDE_REPOS.has(n.name)) continue
   for (const e of n.languages?.edges ?? []) {
     const cur = bytesByLang.get(e.node.name) ?? { size: 0, color: e.node.color }
     cur.size += e.size
