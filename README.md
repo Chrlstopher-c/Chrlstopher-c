@@ -41,6 +41,13 @@
   </a>
 </p>
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/activity-dark.svg"/>
+    <img src="./assets/activity-light.svg" alt="Activity overview" width="95%"/>
+  </picture>
+</p>
+
 <br/>
 
 ## Featured work

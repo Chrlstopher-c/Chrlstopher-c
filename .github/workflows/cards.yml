@@ -24,12 +24,15 @@ jobs:
 
       - name: Generate cards (dark + light)
         working-directory: tools/cards
-        run: bun run cards.ts
+        run: |
+          bun run cards.ts
+          bun run activity.ts
 
       - name: Update assets
         run: |
           cp tools/cards/out/stats-dark.svg tools/cards/out/stats-light.svg \
-             tools/cards/out/langs-dark.svg tools/cards/out/langs-light.svg assets/
+             tools/cards/out/langs-dark.svg tools/cards/out/langs-light.svg \
+             tools/cards/out/activity-dark.svg tools/cards/out/activity-light.svg assets/
           if git diff --quiet -- assets/*.svg; then
             echo "no change"; exit 0
           fi
