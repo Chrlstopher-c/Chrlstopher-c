@@ -1,3 +1,8 @@
 node_modules/
 *.log
 tools/cards/out/
+
+# docs internes — ne jamais pousser sur le repo profil public
+STATE.md
+TODO.md
+ARBORESCENCE.md
