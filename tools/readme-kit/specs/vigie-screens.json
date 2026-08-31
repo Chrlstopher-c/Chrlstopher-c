@@ -1,0 +1,15 @@
+{"groups":[
+{"label":"the watch · what asks for your hand","entries":[
+{"path":"Quart","role":"the entry room: pending decisions you can settle on the spot, the pulse of the fleet, the bell","kind":"agent"},
+{"path":"Décisions","role":"cards on a rail, approve or refuse behind Face ID, with every server conflict handled","kind":"rule"},
+{"path":"Alerte","role":"the alert channel and fleet facts, read and delivered kept apart","kind":"rule"}]},
+{"label":"the work · what the teams are doing","entries":[
+{"path":"Fil","role":"threads with the orchestrator, read as a document, renamed, moved or archived","kind":"file"},
+{"path":"Parc","role":"a thread split per sub-agent, and a box to instruct the lead","kind":"dir"},
+{"path":"Machines","role":"gauges with thresholds, five-hour and seven-day quotas, wake the PC","kind":"port"},
+{"path":"Artefact","role":"scripts and pages a team produced, code or rendered, in an isolated web view","kind":"file"}]},
+{"label":"the tools","entries":[
+{"path":"Dictée","role":"on-device speech recognition straight into the composer, no audio leaves the phone","kind":"agent"},
+{"path":"Terminal","role":"a terminal with ^C and ^D armed, the last capture pinned, a row of special keys","kind":"socket"},
+{"path":"Réglages","role":"server, orchestrator and alert settings, and the build signature","kind":"file"},
+{"path":"Diagnostic","role":"a chain probe, hidden behind a long press on the version number","kind":"rule"}]}]}

@@ -1,0 +1,4 @@
+{"title":"What it is built with","tiles":[
+{"value":"Swift 6","label":"SwiftUI, one library product because that is what xtool wants","sub":"Package.swift, iOS 18 and macOS 14"},
+{"value":"xtool","unit":"1.17","label":"builds and packages the IPA on Linux with the Darwin SDK","sub":"no Mac, no Xcode, no simulator"},
+{"value":"16","unit":"frameworks","label":"Apple frameworks only: Speech, LocalAuthentication, WebKit, BackgroundTasks and the rest","sub":"grep import across Sources"}]}

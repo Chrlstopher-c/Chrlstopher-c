@@ -1,0 +1,22 @@
+{"groups":[
+{"label":"Build outputs · never committed","entries":[
+{"path":"xtool/Vigie.ipa","role":"the unsigned app, about 17 MB, produced by build.sh","kind":"file"},
+{"path":".build/Info.plist","role":"the effective plist, generated from the template at each build","kind":"file"}]},
+{"label":"Configuration","entries":[
+{"path":".env.local","role":"your real addresses, ignored by git (.env.example is the template)","kind":"file"},
+{"path":"Info.template.plist","role":"versioned plist, example addresses only","kind":"file"},
+{"path":"xtool.yml","role":"bundle id com.echo.labs, plist path, app icon","kind":"file"}]},
+{"label":"Plist keys that must stay","entries":[
+{"path":"NSFaceIDUsageDescription","role":"missing, the first Face ID call kills the process instead of failing","kind":"rule"},
+{"path":"NSSpeechRecognitionUsageDescription","role":"missing, instantiating the recogniser kills the process, even offline","kind":"rule"},
+{"path":"UIBackgroundModes","role":"audio, location, fetch and processing: how it stays alive without a paid account","kind":"rule"},
+{"path":"BGTaskSchedulerPermittedIdentifiers","role":"the two background task ids, required for the scheduled refresh","kind":"rule"}]},
+{"label":"On the phone","entries":[
+{"path":"Keychain · com.echo.labs.vigie","role":"the API token, readable after first unlock, on this device only","kind":"socket"},
+{"path":"app container","role":"gets a new UUID at every install, so no absolute path is ever stored","kind":"dir"}]},
+{"label":"Logs","entries":[
+{"path":"./logs.sh","role":"streams the phone's system log filtered on Vigie (idevicesyslog)","kind":"log"},
+{"path":"./logs.sh --all","role":"the whole device log, or pass any pattern to filter it","kind":"log"}]},
+{"label":"Sources","entries":[
+{"path":"Sources/Vigie/","role":"one folder per screen, plus Charte for the design language and Lien for the HTTP client","kind":"dir"},
+{"path":"Sources/VigieNoyau/","role":"pure Swift core: contract, mirror, threads, watch logic. No UIKit, so it tests on Linux","kind":"dir"}]}]}

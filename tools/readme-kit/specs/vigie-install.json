@@ -1,0 +1,5 @@
+{"title":"From an Arch laptop to an iPhone","steps":[
+{"title":"Install the toolchain","note":"swiftly with a Swift 6 toolchain, xtool with the Darwin SDK, libimobiledevice for usbmuxd and idevice_id, and Impactor at ~/.local/opt/Impactor.AppImage."},
+{"title":"Point it at your server","cmd":"cp .env.example .env.local","note":"VIGIE_TUNNEL for the public address, VIGIE_LAN for the fallback at home. Without this file the build embeds the example addresses."},
+{"title":"Build the app","cmd":"./build.sh","note":"Checks the SDK, writes .build/Info.plist from the template with your addresses, runs xtool dev build --ipa, and prints the size of xtool/Vigie.ipa."},
+{"title":"Put it on the phone","cmd":"./deploy.sh","note":"Rebuilds, checks usbmuxd, names the connected iPhone, opens Impactor. Dragging the IPA in to sign and install is the one manual gesture."}]}

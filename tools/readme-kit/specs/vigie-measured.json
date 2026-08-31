@@ -1,0 +1,5 @@
+{"title":"Counted in the repository","tiles":[
+{"value":"156","label":"tests, all on the pure Swift core, runnable without a phone","sub":"swift test on VigieNoyau"},
+{"value":"180","unit":"files","label":"Swift sources and tests, 20 668 lines","sub":"find Sources Tests -name '*.swift'"},
+{"value":"0","label":"external packages: Apple frameworks only","sub":"Package.swift declares no dependency"},
+{"value":"7","unit":"days","label":"how long a free signature lasts before you redeploy","sub":"Impactor, free Apple ID"}]}

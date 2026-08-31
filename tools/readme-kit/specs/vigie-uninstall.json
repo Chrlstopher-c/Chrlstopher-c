@@ -1,0 +1,4 @@
+{"title":"Uninstall (no script for this one)","steps":[
+{"title":"On the phone","note":"Long press the icon and remove it, like any app. The keychain entry and the app container go with it."},
+{"title":"On the laptop","cmd":"rm -rf .build xtool","note":"The generated Info.plist and the IPA. Both are already ignored by git, so nothing else is left behind."},
+{"title":"Your addresses","cmd":"rm .env.local","note":"The only file holding your real tunnel and LAN addresses. Everything versioned carries example values."}]}
