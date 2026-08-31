@@ -1,0 +1,5 @@
+{"title":"Deploy, in the order the scripts enforce","steps":[
+{"title":"Pull and check the fleet is idle","cmd":"./deployer-tout.sh --simulation","note":"git pull --ff-only on the PC, then a guard refuses to continue while a team is running. Drop --simulation to do it for real."},
+{"title":"Raspberry Pi: control plane and web UI","cmd":"./deployer-pi.sh","note":"rsync harness/ to /home/pi/ccremote-harness, scp pi-web/ to /home/pi/ccremote-web, install both systemd units."},
+{"title":"PC: restart the supervisor","cmd":"./deploy-superviseur-pc.sh","note":"No copy: the user unit ccremote-pc runs the repo in place. The script checks the process is newer than the sources."},
+{"title":"VPS: fallback supervisor","cmd":"./deploy-superviseur-vps.sh --demarrer","note":"rsync to /home/ubuntu/ccremote/harness, bun install, ~/.config/ccremote/pc.env, user unit ccremote-pc. Without --demarrer nothing starts."}]}

@@ -1,0 +1,5 @@
+{"title":"Measured, in production","tiles":[
+{"value":"1 814","label":"harness tests passing, 0 failing, typecheck clean","sub":"bun test, 2026-08-21, commit 78b2c7e (STATE.md)"},
+{"value":"108 / 7 864","label":"threads and events in the production registry","sub":"2026-08-21 (STATE.md)"},
+{"value":"42","unit":"ms","label":"to list every thread, without a dedicated index","sub":"same registry, same day"},
+{"value":"45","unit":"min","label":"the one real outage, a deploy variable inherited from the wrong shell","sub":"2026-08-18, fixed in deploy-superviseur-vps.sh"}]}

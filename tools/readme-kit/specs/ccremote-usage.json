@@ -1,0 +1,5 @@
+{"title":"A day with it","steps":[
+{"title":"Open pi-web","note":"One password, one session cookie. The same page serves the control panel and the harness."},
+{"title":"Give a team a mandate","note":"Write what you want done and on which project. The orchestrator drafts the team, you approve it, workers spawn on the PC or the VPS."},
+{"title":"Follow the thread","note":"Each team is a thread with sub-agents you can open. Talk to the lead from the same box; approve pending permissions when it asks."},
+{"title":"Watch quotas and machines","note":"Five-hour and seven-day windows per Claude account, machine gauges, wake the PC, switch accounts."}]}

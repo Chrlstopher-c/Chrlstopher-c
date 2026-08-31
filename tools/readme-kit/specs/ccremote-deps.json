@@ -1,0 +1,5 @@
+{"title":"What it stands on","tiles":[
+{"value":"Agent SDK","unit":"0.3.220","label":"runs the orchestrator and every worker","sub":"harness/package.json"},
+{"value":"Bun","label":"runtime, tests and SQLite for 547 TS files","sub":"strict TypeScript, zod 4, pino 9"},
+{"value":"FastAPI","label":"pi-web: the one page that serves both systems","sub":"uvicorn, jinja2, httpx, loguru"},
+{"value":"3","unit":"SQLite files","label":"one registry per machine, no shared database","sub":"Pi, PC, VPS"}]}

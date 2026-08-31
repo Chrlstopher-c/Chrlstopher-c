@@ -1,0 +1,5 @@
+{"title":"Uninstall, machine by machine (no script yet)","steps":[
+{"title":"Pi","cmd":"sudo systemctl disable --now ccremote-harness ccremote-web","note":"Then remove /home/pi/ccremote-harness, /home/pi/ccremote-web, the two units, and the two ingress rules in /etc/cloudflared/config.yml."},
+{"title":"PC","cmd":"systemctl --user disable --now ccremote-pc","note":"Remove ~/.config/systemd/user/ccremote-pc.service and ~/.config/ccremote/pc.env. The code is the repo itself."},
+{"title":"VPS","cmd":"systemctl --user disable --now ccremote-pc","note":"Remove /home/ubuntu/ccremote, ~/.config/ccremote, ~/.local/share/ccremote and the user unit."},
+{"title":"Registries","cmd":"rm /var/lib/ccremote/pc/registre-workers.sqlite","note":"Thread history lives in the SQLite files on each machine. Export what you want to keep first."}]}

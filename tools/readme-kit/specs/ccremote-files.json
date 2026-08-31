@@ -1,0 +1,20 @@
+{"groups":[
+{"label":"Raspberry Pi · the only machine reachable from outside","entries":[
+{"path":"/home/pi/ccremote-harness/","role":"control plane (Bun), its .env and registre.db","kind":"dir"},
+{"path":"/home/pi/ccremote-web/","role":"pi-web: FastAPI app, templates, venv, .env","kind":"dir"},
+{"path":"/etc/systemd/system/ccremote-{harness,web}.service","role":"the two system units","kind":"file"},
+{"path":"127.0.0.1:8722","role":"harness web API, loopback only, no auth of its own","kind":"port"},
+{"path":"0.0.0.0:8721","role":"link the supervisors connect to, published by the tunnel","kind":"port"},
+{"path":"127.0.0.1:8766","role":"pi-web, published as ccremote.exemple.com by the tunnel","kind":"port"}]},
+{"label":"PC · main workstation","entries":[
+{"path":"/mnt/projects/ccremote/harness/","role":"run in place by the user unit ccremote-pc (linger enabled)","kind":"dir"},
+{"path":"~/.config/ccremote/pc.env","role":"EnvironmentFile of the supervisor","kind":"file"},
+{"path":"/var/lib/ccremote/pc/registre-workers.sqlite","role":"worker registry (CCREMOTE_PC_REGISTRE_DB)","kind":"file"},
+{"path":"192.168.x.x:8765","role":"server.py: tmux, metrics, Wake-on-LAN, LAN only","kind":"port"}]},
+{"label":"VPS · fallback","entries":[
+{"path":"/home/ubuntu/ccremote/harness/","role":"same supervisor, user unit ccremote-pc","kind":"dir"},
+{"path":"~/.local/share/ccremote/registre-pc.db","role":"its own worker registry","kind":"file"}]},
+{"label":"Logs","entries":[
+{"path":"journalctl -u ccremote-harness / -u ccremote-web","role":"on the Pi","kind":"log"},
+{"path":"journalctl --user -u ccremote-pc","role":"on the PC and the VPS","kind":"log"},
+{"path":"logs/pi-web.log","role":"local development, reset by start.sh","kind":"log"}]}]}
