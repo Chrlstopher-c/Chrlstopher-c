@@ -47,21 +47,27 @@
 
 <table>
 <tr>
-<td width="50%" valign="top">
-
-### 🛡️ Systems &amp; security
-- **[aegis](https://github.com/Chrlstopher-c/aegis)** — real-time Linux EDR antivirus, 100% local. Hybrid YARA + eBPF.
-- **[vitrail](https://github.com/Chrlstopher-c/vitrail)** — reversible network visibility: process attribution + cooperative TLS decryption + guaranteed kill-switch.
-- **[nullnode](https://github.com/Chrlstopher-c/nullnode)** — sovereign P2P encrypted messaging (WebRTC + blind relay, zero-knowledge).
-
+<td width="50%">
+  <a href="https://github.com/Chrlstopher-c/aegis"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/proj-aegis-dark.svg"/><img src="./assets/proj-aegis-light.svg" width="100%" alt="aegis"/></picture></a>
 </td>
-<td width="50%" valign="top">
-
-### 🤖 AI &amp; tooling
-- **[echohub](https://github.com/Chrlstopher-c/echohub)** — local LLM manager: GGUF + AWQ/GPTQ, HuggingFace browser, persistent chat.
-- **[alto](https://github.com/Chrlstopher-c/alto)** — hands-free voice ↔ Claude Code: real-time STT/TTS, full-duplex echo guard, 6s→2s latency.
-- **[vela](https://github.com/Chrlstopher-c/vela)** — Linux file manager with an integrated editor (Tauri v2 + CodeMirror).
-
+<td width="50%">
+  <a href="https://github.com/Chrlstopher-c/vitrail"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/proj-vitrail-dark.svg"/><img src="./assets/proj-vitrail-light.svg" width="100%" alt="vitrail"/></picture></a>
+</td>
+</tr>
+<tr>
+<td width="50%">
+  <a href="https://github.com/Chrlstopher-c/nullnode"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/proj-nullnode-dark.svg"/><img src="./assets/proj-nullnode-light.svg" width="100%" alt="nullnode"/></picture></a>
+</td>
+<td width="50%">
+  <a href="https://github.com/Chrlstopher-c/echohub"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/proj-echohub-dark.svg"/><img src="./assets/proj-echohub-light.svg" width="100%" alt="echohub"/></picture></a>
+</td>
+</tr>
+<tr>
+<td width="50%">
+  <a href="https://github.com/Chrlstopher-c/alto"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/proj-alto-dark.svg"/><img src="./assets/proj-alto-light.svg" width="100%" alt="alto"/></picture></a>
+</td>
+<td width="50%">
+  <a href="https://github.com/Chrlstopher-c/vela"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/proj-vela-dark.svg"/><img src="./assets/proj-vela-light.svg" width="100%" alt="vela"/></picture></a>
 </td>
 </tr>
 </table>
