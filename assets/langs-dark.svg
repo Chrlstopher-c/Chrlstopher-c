@@ -12,11 +12,11 @@
          <text x="46" y="108" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#c1c9d2">Python</text>
          <text x="214" y="108" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11.5" fill="#e9edf1">16.9%</text>
          <text x="296" y="108" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#8b929c">~63k</text>
-         <text x="414" y="108" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#3572A5">echohub-v2</text><circle cx="32" cy="122" r="4.5" fill="#F05138"/>
+         <text x="414" y="108" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#3572A5">enclave</text><circle cx="32" cy="122" r="4.5" fill="#F05138"/>
          <text x="46" y="126" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#c1c9d2">Swift</text>
          <text x="214" y="126" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11.5" fill="#e9edf1">15.7%</text>
          <text x="296" y="126" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#8b929c">~58k</text>
-         <text x="414" y="126" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#F05138">echo-centre</text><circle cx="32" cy="140" r="4.5" fill="#dea584"/>
+         <text x="414" y="126" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#F05138">semaphore</text><circle cx="32" cy="140" r="4.5" fill="#dea584"/>
          <text x="46" y="144" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#c1c9d2">Rust</text>
          <text x="214" y="144" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11.5" fill="#e9edf1">7.7%</text>
          <text x="296" y="144" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#8b929c">~29k</text>
