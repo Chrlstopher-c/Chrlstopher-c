@@ -11,10 +11,10 @@
   <text x="30" y="88" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13.5" fill="#1f2328">semaphore</text>
         <rect x="180" y="80" width="420" height="7" rx="3.5" fill="#eaeef2"/>
         <rect x="180" y="80" width="420" height="7" rx="3.5" fill="url(#bar-light)"/>
-        <text x="618" y="89" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="14.5" font-weight="700" fill="#9a6b1f">50.0%</text>
-        <text x="830" y="88" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#8b949e">1 commits</text><text x="30" y="125" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13.5" fill="#1f2328">enclave</text>
+        <text x="618" y="89" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="14.5" font-weight="700" fill="#9a6b1f">92.3%</text>
+        <text x="830" y="88" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#8b949e">12 commits</text><text x="30" y="125" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13.5" fill="#1f2328">enclave</text>
         <rect x="180" y="117" width="420" height="7" rx="3.5" fill="#eaeef2"/>
-        <rect x="180" y="117" width="420" height="7" rx="3.5" fill="url(#bar-light)"/>
-        <text x="618" y="126" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="14.5" font-weight="700" fill="#9a6b1f">50.0%</text>
+        <rect x="180" y="117" width="35" height="7" rx="3.5" fill="url(#bar-light)"/>
+        <text x="618" y="126" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="14.5" font-weight="700" fill="#9a6b1f">7.7%</text>
         <text x="830" y="125" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#8b949e">1 commits</text>
 </svg>
