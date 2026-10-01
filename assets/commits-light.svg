@@ -1,20 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="160" viewBox="0 0 860 160" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="86" viewBox="0 0 860 86" role="img">
   <defs>
     <linearGradient id="bg-light" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f6f8fa"/></linearGradient>
     <linearGradient id="bar-light" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#b8842f"/><stop offset="1" stop-color="#9a6b1f"/></linearGradient>
   </defs>
-  <rect x="0.5" y="0.5" width="859" height="159" rx="12" fill="url(#bg-light)" stroke="#d0d7de"/>
+  <rect x="0.5" y="0.5" width="859" height="85" rx="12" fill="url(#bg-light)" stroke="#d0d7de"/>
   <rect x="0.5" y="0.5" width="859" height="2.5" rx="1" fill="#9a6b1f"/>
   <text x="30" y="42" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="14" font-weight="700" letter-spacing="0.5" fill="#1f2328">Top projects</text>
-  <text x="830" y="42" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" letter-spacing="1.5" fill="#59636e">SEPTEMBER 2026 · SHARE OF COMMITS</text>
+  <text x="830" y="42" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" letter-spacing="1.5" fill="#59636e">OCTOBER 2026 · SHARE OF COMMITS</text>
   <line x1="30" y1="58" x2="830" y2="58" stroke="#d0d7de"/>
-  <text x="30" y="88" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13.5" fill="#1f2328">semaphore</text>
-        <rect x="180" y="80" width="420" height="7" rx="3.5" fill="#eaeef2"/>
-        <rect x="180" y="80" width="420" height="7" rx="3.5" fill="url(#bar-light)"/>
-        <text x="618" y="89" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="14.5" font-weight="700" fill="#9a6b1f">92.3%</text>
-        <text x="830" y="88" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#8b949e">12 commits</text><text x="30" y="125" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13.5" fill="#1f2328">enclave</text>
-        <rect x="180" y="117" width="420" height="7" rx="3.5" fill="#eaeef2"/>
-        <rect x="180" y="117" width="35" height="7" rx="3.5" fill="url(#bar-light)"/>
-        <text x="618" y="126" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="14.5" font-weight="700" fill="#9a6b1f">7.7%</text>
-        <text x="830" y="125" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#8b949e">1 commits</text>
+  
 </svg>
