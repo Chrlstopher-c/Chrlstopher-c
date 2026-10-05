@@ -4,29 +4,29 @@
   <rect x="0.5" y="0.5" width="439" height="197" rx="12" fill="url(#bg-light)" stroke="#d0d7de"/>
   <rect x="0.5" y="0.5" width="439" height="2.5" rx="1" fill="#9a6b1f"/>
   <text x="26" y="40" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" letter-spacing="1.5" fill="#59636e">LANGUAGES · BY CODE VOLUME</text>
-     <rect x="26" y="52" width="177.05412919236403" height="9" rx="2" fill="#3178c6"/><rect x="205.05412919236403" y="52" width="64.34289170656703" height="9" rx="2" fill="#F05138"/><rect x="271.39702089893103" y="52" width="62.315244543182516" height="9" rx="2" fill="#3572A5"/><rect x="335.71226544211356" y="52" width="27.357979663222768" height="9" rx="2" fill="#dea584"/><rect x="365.0702451053363" y="52" width="15.663129054809055" height="9" rx="2" fill="#f1e05a"/><rect x="382.7333741601454" y="52" width="15.004127276644361" height="9" rx="2" fill="#e34c26"/><circle cx="32" cy="86" r="4.5" fill="#3178c6"/>
+     <rect x="26" y="52" width="174.530715842118" height="9" rx="2" fill="#3178c6"/><rect x="202.530715842118" y="52" width="66.75269645937814" height="9" rx="2" fill="#3572A5"/><rect x="271.2834123014961" y="52" width="63.40792003413817" height="9" rx="2" fill="#F05138"/><rect x="336.6913323356343" y="52" width="26.944237080727852" height="9" rx="2" fill="#dea584"/><rect x="365.63556941636216" y="52" width="15.508340067192655" height="9" rx="2" fill="#f1e05a"/><rect x="383.1439094835548" y="52" width="14.764487777836333" height="9" rx="2" fill="#e34c26"/><circle cx="32" cy="86" r="4.5" fill="#3178c6"/>
          <text x="46" y="90" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#3b4149">TypeScript</text>
-         <text x="214" y="90" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11.5" fill="#1f2328">46.1%</text>
+         <text x="214" y="90" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11.5" fill="#1f2328">45.5%</text>
          <text x="296" y="90" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#59636e">~175k</text>
-         <text x="414" y="90" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#3178c6">ccremote</text><circle cx="32" cy="104" r="4.5" fill="#F05138"/>
-         <text x="46" y="108" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#3b4149">Swift</text>
-         <text x="214" y="108" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11.5" fill="#1f2328">17.1%</text>
-         <text x="296" y="108" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#59636e">~65k</text>
-         <text x="414" y="108" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#F05138">semaphore</text><circle cx="32" cy="122" r="4.5" fill="#3572A5"/>
-         <text x="46" y="126" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#3b4149">Python</text>
-         <text x="214" y="126" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11.5" fill="#1f2328">16.6%</text>
-         <text x="296" y="126" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#59636e">~63k</text>
-         <text x="414" y="126" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#3572A5">enclave</text><circle cx="32" cy="140" r="4.5" fill="#dea584"/>
+         <text x="414" y="90" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#3178c6">ccremote</text><circle cx="32" cy="104" r="4.5" fill="#3572A5"/>
+         <text x="46" y="108" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#3b4149">Python</text>
+         <text x="214" y="108" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11.5" fill="#1f2328">17.7%</text>
+         <text x="296" y="108" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#59636e">~68k</text>
+         <text x="414" y="108" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#3572A5">enclave</text><circle cx="32" cy="122" r="4.5" fill="#F05138"/>
+         <text x="46" y="126" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#3b4149">Swift</text>
+         <text x="214" y="126" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11.5" fill="#1f2328">16.9%</text>
+         <text x="296" y="126" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#59636e">~65k</text>
+         <text x="414" y="126" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#F05138">semaphore</text><circle cx="32" cy="140" r="4.5" fill="#dea584"/>
          <text x="46" y="144" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#3b4149">Rust</text>
-         <text x="214" y="144" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11.5" fill="#1f2328">7.6%</text>
+         <text x="214" y="144" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11.5" fill="#1f2328">7.5%</text>
          <text x="296" y="144" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#59636e">~29k</text>
          <text x="414" y="144" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#dea584">vitrail</text><circle cx="32" cy="158" r="4.5" fill="#f1e05a"/>
          <text x="46" y="162" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#3b4149">JavaScript</text>
-         <text x="214" y="162" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11.5" fill="#1f2328">4.6%</text>
+         <text x="214" y="162" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11.5" fill="#1f2328">4.5%</text>
          <text x="296" y="162" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#59636e">~17k</text>
          <text x="414" y="162" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#f1e05a">ccremote</text><circle cx="32" cy="176" r="4.5" fill="#e34c26"/>
          <text x="46" y="180" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#3b4149">HTML</text>
-         <text x="214" y="180" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11.5" fill="#1f2328">4.4%</text>
+         <text x="214" y="180" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11.5" fill="#1f2328">4.3%</text>
          <text x="296" y="180" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#59636e">~17k</text>
          <text x="414" y="180" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#e34c26">ccremote</text>
      <text x="46" y="72" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="9.5" fill="#8b949e">language</text>
