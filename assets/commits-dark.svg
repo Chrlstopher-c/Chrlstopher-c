@@ -11,18 +11,18 @@
   <text x="30" y="88" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13.5" fill="#e9edf1">echo-browser</text>
         <rect x="180" y="80" width="420" height="7" rx="3.5" fill="#1c2129"/>
         <rect x="180" y="80" width="420" height="7" rx="3.5" fill="url(#bar-dark)"/>
-        <text x="618" y="89" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="14.5" font-weight="700" fill="#e0b579">50.7%</text>
-        <text x="830" y="88" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#5b636e">116 commits</text><text x="30" y="125" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13.5" fill="#e9edf1">rixe</text>
+        <text x="618" y="89" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="14.5" font-weight="700" fill="#e0b579">58.9%</text>
+        <text x="830" y="88" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#5b636e">162 commits</text><text x="30" y="125" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13.5" fill="#e9edf1">rixe</text>
         <rect x="180" y="117" width="420" height="7" rx="3.5" fill="#1c2129"/>
-        <rect x="180" y="117" width="340.3448275862069" height="7" rx="3.5" fill="url(#bar-dark)"/>
-        <text x="618" y="126" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="14.5" font-weight="700" fill="#e0b579">41.0%</text>
+        <rect x="180" y="117" width="243.7037037037037" height="7" rx="3.5" fill="url(#bar-dark)"/>
+        <text x="618" y="126" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="14.5" font-weight="700" fill="#e0b579">34.2%</text>
         <text x="830" y="125" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#5b636e">94 commits</text><text x="30" y="162" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13.5" fill="#e9edf1">flix</text>
         <rect x="180" y="154" width="420" height="7" rx="3.5" fill="#1c2129"/>
-        <rect x="180" y="154" width="39.827586206896555" height="7" rx="3.5" fill="url(#bar-dark)"/>
-        <text x="618" y="163" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="14.5" font-weight="700" fill="#e0b579">4.8%</text>
+        <rect x="180" y="154" width="28.51851851851852" height="7" rx="3.5" fill="url(#bar-dark)"/>
+        <text x="618" y="163" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="14.5" font-weight="700" fill="#e0b579">4.0%</text>
         <text x="830" y="162" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#5b636e">11 commits</text><text x="30" y="199" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="13.5" fill="#e9edf1">jev-harness</text>
         <rect x="180" y="191" width="420" height="7" rx="3.5" fill="#1c2129"/>
-        <rect x="180" y="191" width="28.96551724137931" height="7" rx="3.5" fill="url(#bar-dark)"/>
-        <text x="618" y="200" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="14.5" font-weight="700" fill="#e0b579">3.5%</text>
+        <rect x="180" y="191" width="20.74074074074074" height="7" rx="3.5" fill="url(#bar-dark)"/>
+        <text x="618" y="200" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="14.5" font-weight="700" fill="#e0b579">2.9%</text>
         <text x="830" y="199" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#5b636e">8 commits</text>
 </svg>
