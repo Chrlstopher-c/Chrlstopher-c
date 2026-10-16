@@ -4,13 +4,13 @@
   <rect x="0.5" y="0.5" width="439" height="197" rx="12" fill="url(#bg-dark)" stroke="#2a313c"/>
   <rect x="0.5" y="0.5" width="439" height="2.5" rx="1" fill="#d8a35f"/>
   <text x="26" y="40" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" letter-spacing="1.5" fill="#8b929c">LANGUAGES · BY CODE VOLUME</text>
-     <rect x="26" y="52" width="161.5637687954034" height="9" rx="2" fill="#3178c6"/><rect x="189.5637687954034" y="52" width="57.17090588239714" height="9" rx="2" fill="#3572A5"/><rect x="248.73467467780054" y="52" width="53.11964349007007" height="9" rx="2" fill="#F05138"/><rect x="303.8543181678706" y="52" width="37.48584246950215" height="9" rx="2" fill="#dea584"/><rect x="343.3401606373727" y="52" width="16.89380328330132" height="9" rx="2" fill="#f1e05a"/><rect x="362.23396392067406" y="52" width="12.260581305396785" height="9" rx="2" fill="#e34c26"/><circle cx="32" cy="86" r="4.5" fill="#3178c6"/>
+     <rect x="26" y="52" width="161.98161815566525" height="9" rx="2" fill="#3178c6"/><rect x="189.98161815566525" y="52" width="57.05909137502563" height="9" rx="2" fill="#3572A5"/><rect x="249.0407095306909" y="52" width="53.015484601653085" height="9" rx="2" fill="#F05138"/><rect x="304.056194132344" y="52" width="37.411226575795006" height="9" rx="2" fill="#dea584"/><rect x="343.467420708139" y="52" width="16.858099903828045" height="9" rx="2" fill="#f1e05a"/><rect x="362.325520611967" y="52" width="12.233633266496325" height="9" rx="2" fill="#e34c26"/><circle cx="32" cy="86" r="4.5" fill="#3178c6"/>
          <text x="46" y="90" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#c1c9d2">TypeScript</text>
-         <text x="214" y="90" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11.5" fill="#e9edf1">42.2%</text>
-         <text x="296" y="90" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#8b929c">~192k</text>
+         <text x="214" y="90" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11.5" fill="#e9edf1">42.3%</text>
+         <text x="296" y="90" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#8b929c">~193k</text>
          <text x="414" y="90" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#3178c6">ccremote</text><circle cx="32" cy="104" r="4.5" fill="#3572A5"/>
          <text x="46" y="108" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#c1c9d2">Python</text>
-         <text x="214" y="108" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11.5" fill="#e9edf1">15.3%</text>
+         <text x="214" y="108" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11.5" fill="#e9edf1">15.2%</text>
          <text x="296" y="108" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#8b929c">~70k</text>
          <text x="414" y="108" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#3572A5">enclave</text><circle cx="32" cy="122" r="4.5" fill="#F05138"/>
          <text x="46" y="126" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#c1c9d2">Swift</text>
