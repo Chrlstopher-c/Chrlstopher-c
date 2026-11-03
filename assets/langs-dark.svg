@@ -4,7 +4,7 @@
   <rect x="0.5" y="0.5" width="439" height="197" rx="12" fill="url(#bg-dark)" stroke="#2a313c"/>
   <rect x="0.5" y="0.5" width="439" height="2.5" rx="1" fill="#d8a35f"/>
   <text x="26" y="40" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" letter-spacing="1.5" fill="#8b929c">LANGUAGES · BY CODE VOLUME</text>
-     <rect x="26" y="52" width="159.7335107557101" height="9" rx="2" fill="#3178c6"/><rect x="187.7335107557101" y="52" width="53.06533857511782" height="9" rx="2" fill="#3572A5"/><rect x="242.79884933082792" y="52" width="50.87390765173886" height="9" rx="2" fill="#dea584"/><rect x="295.6727569825668" y="52" width="48.45423163307483" height="9" rx="2" fill="#F05138"/><rect x="346.1269886156416" y="52" width="16.171701290127288" height="9" rx="2" fill="#f1e05a"/><rect x="364.2986899057689" y="52" width="11.127401281734485" height="9" rx="2" fill="#e34c26"/><circle cx="32" cy="86" r="4.5" fill="#3178c6"/>
+     <rect x="26" y="52" width="159.60851623836817" height="9" rx="2" fill="#3178c6"/><rect x="187.60851623836817" y="52" width="52.994038043496666" height="9" rx="2" fill="#3572A5"/><rect x="242.60255428186483" y="52" width="51.13305157877377" height="9" rx="2" fill="#dea584"/><rect x="295.7356058606386" y="52" width="48.388901724441524" height="9" rx="2" fill="#F05138"/><rect x="346.1245075850801" y="52" width="16.14817193398469" height="9" rx="2" fill="#f1e05a"/><rect x="364.2726795190648" y="52" width="11.11040346215484" height="9" rx="2" fill="#e34c26"/><circle cx="32" cy="86" r="4.5" fill="#3178c6"/>
          <text x="46" y="90" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#c1c9d2">TypeScript</text>
          <text x="214" y="90" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11.5" fill="#e9edf1">41.7%</text>
          <text x="296" y="90" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#8b929c">~208k</text>
@@ -14,7 +14,7 @@
          <text x="296" y="108" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#8b929c">~71k</text>
          <text x="414" y="108" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#3572A5">enclave</text><circle cx="32" cy="122" r="4.5" fill="#dea584"/>
          <text x="46" y="126" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#c1c9d2">Rust</text>
-         <text x="214" y="126" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11.5" fill="#e9edf1">13.6%</text>
+         <text x="214" y="126" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11.5" fill="#e9edf1">13.7%</text>
          <text x="296" y="126" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#8b929c">~68k</text>
          <text x="414" y="126" text-anchor="end" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="11" fill="#dea584">echo-browser</text><circle cx="32" cy="140" r="4.5" fill="#F05138"/>
          <text x="46" y="144" font-family="ui-monospace,'SF Mono',Consolas,monospace" font-size="12" fill="#c1c9d2">Swift</text>
